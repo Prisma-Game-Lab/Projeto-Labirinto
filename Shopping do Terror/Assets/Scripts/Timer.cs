@@ -5,7 +5,9 @@ using UnityEngine.UI;
 
 public class Timer : MonoBehaviour
 {
-    public float cronometro;
+    public float seg = 0.0f;
+    public float min = 0.0f;
+    public float hora = 0.0f;
     public Text UISeg;
     public Text UIMin;
     public Text UIHora;
@@ -17,9 +19,20 @@ public class Timer : MonoBehaviour
 
     void FixedUpdate()
     {
-        cronometro += Time.deltaTime;
-        UISeg.text = ":" + Mathf.Floor(cronometro % 60).ToString("00");
-        UIMin.text = "" + Mathf.Floor(cronometro / 60).ToString("00");
+        seg += Time.deltaTime;
+        UISeg.text = ":" + Mathf.Floor(seg).ToString("00");
+        UIMin.text = "" + Mathf.Floor(min).ToString("00");
+
+        if (seg > 60.0f)
+        {
+            seg = 0.0f;
+            min++;
+        }
+        if(min > 60.0f)
+        {
+            min = 0.0f;
+            hora++;
+        }
     }
     
 }
