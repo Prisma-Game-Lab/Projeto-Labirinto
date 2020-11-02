@@ -8,9 +8,7 @@ public class Timer : MonoBehaviour
     public float seg = 0.0f;
     public float min = 0.0f;
     public float hora = 0.0f;
-    public Text UISeg;
-    public Text UIMin;
-    public Text UIHora;
+    public Text UITempo;
 
     void Awake()
     {
@@ -20,8 +18,7 @@ public class Timer : MonoBehaviour
     void FixedUpdate()
     {
         seg += Time.deltaTime;
-        UISeg.text = ":" + Mathf.Floor(seg).ToString("00");
-        UIMin.text = "" + Mathf.Floor(min).ToString("00");
+        UITempo.text = Mathf.Floor(hora).ToString("00") + ":" + Mathf.Floor(min).ToString("00") + ":" + Mathf.Floor(seg).ToString("00");
 
         if (seg > 60.0f)
         {
