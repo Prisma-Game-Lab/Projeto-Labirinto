@@ -6,9 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Level test.unity
+    path: Assets/Scenes/Testes/Level test.unity
     guid: 2144da080cfa80744b4e76ea52d16559
   - enabled: 1
-    path: Assets/Scenes/Teste de Luz.unity
+    path: Assets/Scenes/Testes/Teste de Luz.unity
     guid: 47c2714fea2014a8fa0ddc9b931cf381
   m_configObjects: {}
