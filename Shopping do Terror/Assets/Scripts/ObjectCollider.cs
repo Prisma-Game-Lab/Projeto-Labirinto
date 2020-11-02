@@ -1,16 +1,19 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class ObjectCollider : MonoBehaviour
 {
     public GameObject Object;
+    
+    public TextMeshProUGUI triggerText;
 
     private ObjectCount objectCountScript;
 
-    private List<GameObject> objectList = new List<GameObject>();
+    static private List<GameObject> objectList = new List<GameObject>();
 
-    private int count = 0;
+    static private int count = 0;
 
     private GameObject Other;
 
@@ -21,21 +24,25 @@ public class ObjectCollider : MonoBehaviour
     }
 
     void Update() {
-        if (isTrigger)
+        if (isTrigger) {
             PressZ();
+        }
     }
 
     void OnTriggerEnter2D(Collider2D other) {
         Other = other.gameObject;
-        if (Other.CompareTag ("Object")) {
+        if (Other.CompareTag("Object")) {
             isTrigger = true;
-            Debug.Log("Aperte Z para interagir");
+            triggerText.gameObject.SetActive(true);
+            triggerText.text = "Aperte Z para interagir";
         }
     }
 
     void OnTriggerExit2D(Collider2D other) {
-        if (other.gameObject.CompareTag ("Object")) 
+        if (other.gameObject.CompareTag("Object")) {
+            triggerText.gameObject.SetActive(false);
             isTrigger = false;
+        } 
     }
 
     void PressZ() {
@@ -44,7 +51,15 @@ public class ObjectCollider : MonoBehaviour
             Other.SetActive(false);
             count++;
             objectCountScript.CountText(count);
+            triggerText.text = "Voce pegou o objeto!";
             isTrigger = false;
+            triggerText.gameObject.SetActive(true);
+            StartCoroutine(DisableText());
         }
+    }
+
+    private IEnumerator DisableText() {
+        yield return new WaitForSeconds(1.5f);
+        triggerText.gameObject.SetActive(false);
     }
 }
