@@ -11,7 +11,8 @@ public class ObjectCollider : MonoBehaviour
 
     private ObjectCount objectCountScript;
 
-    static private List<GameObject> objectList = new List<GameObject>();
+    static public List<GameObject> objectList = new List<GameObject>();
+    public List<GameObject> objectListCopy = new List<GameObject>();
 
     static private int count = 0;
 
@@ -48,6 +49,7 @@ public class ObjectCollider : MonoBehaviour
     void PressZ() {
         if (Input.GetKeyDown("z")) {
             objectList.Add(Other);
+            objectListCopy.Add(Other);
             Other.SetActive(false);
             count++;
             objectCountScript.CountText(count);
