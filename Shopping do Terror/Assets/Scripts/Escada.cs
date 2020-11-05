@@ -17,13 +17,13 @@ public class Escada : MonoBehaviour
     {
         bool cont = false;
 
-        Debug.Log("Encostou");
-
         for(int i = 0; i < itenList.Count; i++)
         {
-            if (!player.GetComponent<ObjectCollider>().objectListCopy.Contains(itenList[i]))
+            Debug.Log("Teste");
+            if (!player.GetComponent<ObjectCollider>().objectListCopy.Contains(itenList[i].name))
             {
                 cont = false;
+                Debug.Log("Encostou");
             }
             else
             {
