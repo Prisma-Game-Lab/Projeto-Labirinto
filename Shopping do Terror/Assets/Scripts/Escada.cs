@@ -11,28 +11,31 @@ public class Escada : MonoBehaviour
     public string SceneName;
     public List<GameObject> itenList = new List<GameObject>();
     public GameObject player;
+    bool cont = false;
 
 
     void OnCollisionEnter2D(Collision2D other)
     {
-        bool cont = false;
 
+
+        //caso o player tenha os itens (que estão no script ObjectCollider) ele carregara a próxima cena
         for(int i = 0; i < itenList.Count; i++)
         {
             Debug.Log("Teste");
-            if (!player.GetComponent<ObjectCollider>().objectListCopy.Contains(itenList[i].name))
+            if (player.GetComponent<ObjectCollider>().objectListCopy.Contains(itenList[i].name))
             {
-                cont = false;
+                cont = true;
                 Debug.Log("Encostou");
             }
             else
             {
-                cont = true;
+                cont = false;
+                Debug.Log("Deu ruim");
             }
             
         }
 
-        if (other.gameObject.CompareTag("Player") && cont)
+        if (other.gameObject.CompareTag("Player") && cont == true)
         {
             SceneManager.LoadScene(SceneName, LoadSceneMode.Single);
         }
