@@ -44,6 +44,8 @@ GameObject:
   - component: {fileID: 6783228056907265379}
   - component: {fileID: 6783228056907265388}
   - component: {fileID: 6783228056907265389}
+  - component: {fileID: 36661112938673499}
+  - component: {fileID: -3662796527147715749}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -178,6 +180,35 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &36661112938673499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6783228056907265390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64ff7e7a0a004a04c8d8c68f7161689e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Object: {fileID: 0}
+  Particles: {fileID: 0}
+  triggerText: {fileID: 0}
+  objectListCopy: []
+--- !u!114 &-3662796527147715749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6783228056907265390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4c0d253e927b9f489b1b51c85a6c17d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  countText: {fileID: 0}
 --- !u!1 &6783228057001649319
 GameObject:
   m_ObjectHideFlags: 0
