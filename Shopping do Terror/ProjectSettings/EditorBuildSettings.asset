@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Testes/Teste de Luz.unity
     guid: 47c2714fea2014a8fa0ddc9b931cf381
+  - enabled: 1
+    path: Assets/Scenes/Testes/Template.unity
+    guid: 89d1e80eb3658403ebbb7dcdd56db3b1
   m_configObjects: {}
