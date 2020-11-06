@@ -5,7 +5,10 @@ using TMPro;
 
 public class ObjectCollider : MonoBehaviour
 {
+    [Tooltip("Referencia texto que conta objetos")]
     public GameObject Object;
+
+    public ParticleSystem Particles;
     
     public TextMeshProUGUI triggerText;
 
@@ -21,11 +24,12 @@ public class ObjectCollider : MonoBehaviour
     private bool isTrigger = false;
 
     void Start() {
+        Particles.Stop();
         objectCountScript = Object.GetComponent<ObjectCount>();
     }
 
     void Update() {
-        if (isTrigger) {
+        if (isTrigger) { 
             PressZ();
         }
     }
@@ -34,6 +38,7 @@ public class ObjectCollider : MonoBehaviour
         Other = other.gameObject;
         if (Other.CompareTag("Object")) {
             isTrigger = true;
+            Particles.Play();
             triggerText.gameObject.SetActive(true);
             triggerText.text = "Aperte Z para interagir";
         }
@@ -41,6 +46,7 @@ public class ObjectCollider : MonoBehaviour
 
     void OnTriggerExit2D(Collider2D other) {
         if (other.gameObject.CompareTag("Object")) {
+            Particles.Stop();
             triggerText.gameObject.SetActive(false);
             isTrigger = false;
         } 
@@ -48,6 +54,7 @@ public class ObjectCollider : MonoBehaviour
 
     void PressZ() {
         if (Input.GetKeyDown("z")) {
+            Particles.Stop();
             objectList.Add(Other.name);
             objectListCopy.Add(Other.name);
             Other.SetActive(false);
