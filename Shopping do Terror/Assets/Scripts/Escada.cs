@@ -21,16 +21,15 @@ public class Escada : MonoBehaviour
         //caso o player tenha os itens (que estão no script ObjectCollider) ele carregara a próxima cena
         for(int i = 0; i < itenList.Count; i++)
         {
-            Debug.Log("Teste");
             if (player.GetComponent<ObjectCollider>().objectListCopy.Contains(itenList[i].name))
             {
                 cont = true;
-                Debug.Log("Encostou");
             }
             else
             {
                 cont = false;
                 Debug.Log("Deu ruim");
+                break;
             }
             
         }
