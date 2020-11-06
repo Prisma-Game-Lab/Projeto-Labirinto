@@ -29,7 +29,7 @@ public class Escada : MonoBehaviour
             {
                 cont = false;
                 Debug.Log("Deu ruim");
-                break;
+                //break;
             }
             
         }
