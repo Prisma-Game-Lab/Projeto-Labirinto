@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -3136,6 +3136,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SceneName: Teste de Luz
+  itenList: []
+  player: {fileID: 0}
 --- !u!212 &1144639413
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5089,9 +5091,7 @@ MonoBehaviour:
   seg: 0
   min: 0
   hora: 0
-  UISeg: {fileID: 624463131}
-  UIMin: {fileID: 653561064}
-  UIHora: {fileID: 0}
+  UITempo: {fileID: 0}
 --- !u!4 &1973679657
 Transform:
   m_ObjectHideFlags: 0
@@ -5263,7 +5263,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2013946897}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a2fba25a5cd15594e8f050a11e386c80, type: 3}
   m_Name: 
