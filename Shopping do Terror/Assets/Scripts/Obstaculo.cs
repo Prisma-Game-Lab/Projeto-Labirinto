@@ -1,25 +1,21 @@
-﻿/* Script para carregar uma nova cena após completar um objegitvo*/
-
-
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Escada : MonoBehaviour
+public class Obstaculo : MonoBehaviour
 {
-    public string SceneName;
     [Header("Lista de intens necessários para se passar pelo obstáculo.")]
     public List<GameObject> itenList = new List<GameObject>();
     public GameObject player;
+    [Header("Precisa da energia para passar pelo obsstaculo?")]
+    public bool energy;
     bool cont = false;
 
 
     void OnCollisionEnter2D(Collision2D other)
     {
-
-
-        //caso o player tenha os itens (que estão no script ObjectCollider) ele carregara a próxima cena
+        //caso o player tenha os itens (que estão no script ObjectCollider) ele desliga o objeto e permite o player passar
         for(int i = 0; i < itenList.Count; i++)
         {
             if (player.GetComponent<ObjectCollider>().objectListCopy.Contains(itenList[i].name))
@@ -37,7 +33,8 @@ public class Escada : MonoBehaviour
 
         if (other.gameObject.CompareTag("Player") && cont == true)
         {
-            SceneManager.LoadScene(SceneName, LoadSceneMode.Single);
+            this.setActive = false;
         }
     }
 }
+
