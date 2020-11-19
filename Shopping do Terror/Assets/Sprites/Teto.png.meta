@@ -125,6 +125,135 @@ TextureImporter:
   - first:
       213: -2074601442608753430
     second: Teto_40
+  - first:
+      213: -2750638792187771357
+    second: Teto_0
+  - first:
+      213: -8153185126814685688
+    second: Teto_1
+  - first:
+      213: -8851672297913006341
+    second: Teto_2
+  - first:
+      213: -695299278529085392
+    second: Teto_3
+  - first:
+      213: -3882966946767290129
+    second: Teto_4
+  - first:
+      213: -4802249018297583675
+    second: Teto_5
+  - first:
+      213: 5153359210159171494
+    second: Teto_6
+  - first:
+      213: -2512776550464375884
+    second: Teto_7
+  - first:
+      213: -7753218649876760462
+    second: Teto_8
+  - first:
+      213: 3118664803210336429
+    second: Teto_9
+  - first:
+      213: 4339265323404758080
+    second: Teto_10
+  - first:
+      213: 6044122064988849514
+    second: Teto_11
+  - first:
+      213: 5395088618223430110
+    second: Teto_12
+  - first:
+      213: 3223576087647692574
+    second: Teto_13
+  - first:
+      213: -1302670776983663887
+    second: Teto_14
+  - first:
+      213: -196917775367494026
+    second: Teto_15
+  - first:
+      213: -1796602962498906003
+    second: Teto_16
+  - first:
+      213: -1561841554565533888
+    second: Teto_17
+  - first:
+      213: -1008639602119414348
+    second: Teto_18
+  - first:
+      213: -3505268217188974805
+    second: Teto_19
+  - first:
+      213: -4713798798318143639
+    second: Teto_20
+  - first:
+      213: -2718004574540742963
+    second: Teto_21
+  - first:
+      213: 5158998853554983900
+    second: Teto_22
+  - first:
+      213: -2441563728982870337
+    second: Teto_23
+  - first:
+      213: 5026004597354788224
+    second: Teto_24
+  - first:
+      213: -1314877194214111420
+    second: Teto_25
+  - first:
+      213: 3029060423913768236
+    second: Teto_26
+  - first:
+      213: 4420331495718227446
+    second: Teto_27
+  - first:
+      213: -6817128310507454284
+    second: Teto_28
+  - first:
+      213: -5979368785102328254
+    second: Teto_29
+  - first:
+      213: -4439545922272683095
+    second: Teto_30
+  - first:
+      213: -6155497371238128197
+    second: Teto_31
+  - first:
+      213: 7014846737499956476
+    second: Teto_32
+  - first:
+      213: 8407303573909360784
+    second: Teto_33
+  - first:
+      213: -2397532785564308511
+    second: Teto_34
+  - first:
+      213: -1464900350178014022
+    second: Teto_35
+  - first:
+      213: -5829510593435922612
+    second: Teto_36
+  - first:
+      213: 5773211516493431590
+    second: Teto_37
+  - first:
+      213: 7485505775479507937
+    second: Teto_38
+  - first:
+      213: 824995907243596848
+    second: Teto_39
+  - first:
+      213: 7728701554712621627
+    second: Teto_40
+  - first:
+      213: -7773369451969240384
+    second: Teto_41
+  - first:
+      213: -7178003268994782662
+    second: Teto_42
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -218,14 +347,14 @@ TextureImporter:
         width: 10
         height: 10
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 97571bcd1b7f66620800000000000000
-      internalID: 2767171364349638009
+      spriteID: 3260d3e8794c3d9d0800000000000000
+      internalID: -2750638792187771357
       vertices: []
       indices: 
       edges: []
@@ -239,14 +368,14 @@ TextureImporter:
         width: 10
         height: 10
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 65c2cb7c2bf689850800000000000000
-      internalID: 6383975285443538006
+      spriteID: 806663813511ade80800000000000000
+      internalID: -8153185126814685688
       vertices: []
       indices: 
       edges: []
@@ -260,14 +389,14 @@ TextureImporter:
         width: 10
         height: 10
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 15073b8e9459eb4d0800000000000000
-      internalID: -3116889747424579503
+      spriteID: bf6cab671fa882580800000000000000
+      internalID: -8851672297913006341
       vertices: []
       indices: 
       edges: []
@@ -281,14 +410,14 @@ TextureImporter:
         width: 10
         height: 10
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b96dfcfdb82a943d0800000000000000
-      internalID: -3221865336767785317
+      spriteID: 03040b27dfcc956f0800000000000000
+      internalID: -695299278529085392
       vertices: []
       indices: 
       edges: []
@@ -302,14 +431,14 @@ TextureImporter:
         width: 10
         height: 10
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 67222c25084a97da0800000000000000
-      internalID: -5946540961914805642
+      spriteID: fe04a5f722eec1ac0800000000000000
+      internalID: -3882966946767290129
       vertices: []
       indices: 
       edges: []
@@ -323,14 +452,14 @@ TextureImporter:
         width: 10
         height: 10
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3ae32878efeb5a510800000000000000
-      internalID: 1559862846358175395
+      spriteID: 5c7776516fbfa5db0800000000000000
+      internalID: -4802249018297583675
       vertices: []
       indices: 
       edges: []
@@ -344,14 +473,14 @@ TextureImporter:
         width: 10
         height: 10
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 74640dd66da54bdc0800000000000000
-      internalID: -3624171923114539449
+      spriteID: 6a76681e5e8648740800000000000000
+      internalID: 5153359210159171494
       vertices: []
       indices: 
       edges: []
@@ -365,14 +494,14 @@ TextureImporter:
         width: 10
         height: 10
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0d588715045f78250800000000000000
-      internalID: 5946991489559594448
+      spriteID: 4b3b3a56a03d02dd0800000000000000
+      internalID: -2512776550464375884
       vertices: []
       indices: 
       edges: []
@@ -386,14 +515,14 @@ TextureImporter:
         width: 10
         height: 10
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b85fafd39a918f310800000000000000
-      internalID: 1438928295624897931
+      spriteID: 278792c57b8076490800000000000000
+      internalID: -7753218649876760462
       vertices: []
       indices: 
       edges: []
@@ -402,19 +531,19 @@ TextureImporter:
       name: Teto_9
       rect:
         serializedVersion: 2
-        x: 0
-        y: 70
+        x: 40
+        y: 80
         width: 10
         height: 10
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8ddbe26260a16d890800000000000000
-      internalID: -7433725521215701544
+      spriteID: da89dd87d19b74b20800000000000000
+      internalID: 3118664803210336429
       vertices: []
       indices: 
       edges: []
@@ -423,19 +552,19 @@ TextureImporter:
       name: Teto_10
       rect:
         serializedVersion: 2
-        x: 10
+        x: 0
         y: 70
         width: 10
         height: 10
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 955992e7d2efb5620800000000000000
-      internalID: 2764082267665569113
+      spriteID: 04c06bb32da283c30800000000000000
+      internalID: 4339265323404758080
       vertices: []
       indices: 
       edges: []
@@ -444,19 +573,19 @@ TextureImporter:
       name: Teto_11
       rect:
         serializedVersion: 2
-        x: 20
+        x: 10
         y: 70
         width: 10
         height: 10
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d81db581861bdef90800000000000000
-      internalID: -6922681991555198579
+      spriteID: a65c2c6bef801e350800000000000000
+      internalID: 6044122064988849514
       vertices: []
       indices: 
       edges: []
@@ -465,19 +594,19 @@ TextureImporter:
       name: Teto_12
       rect:
         serializedVersion: 2
-        x: 30
+        x: 20
         y: 70
         width: 10
         height: 10
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ea11f0fb58a893a00800000000000000
-      internalID: 736772321092506030
+      spriteID: ed9e5fc83843fda40800000000000000
+      internalID: 5395088618223430110
       vertices: []
       indices: 
       edges: []
@@ -486,19 +615,19 @@ TextureImporter:
       name: Teto_13
       rect:
         serializedVersion: 2
-        x: 0
-        y: 60
+        x: 30
+        y: 70
         width: 10
         height: 10
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fe9c877047572cf70800000000000000
-      internalID: 9206049729500727791
+      spriteID: e172faa5f517cbc20800000000000000
+      internalID: 3223576087647692574
       vertices: []
       indices: 
       edges: []
@@ -507,82 +636,19 @@ TextureImporter:
       name: Teto_14
       rect:
         serializedVersion: 2
-        x: 10
-        y: 60
+        x: 40
+        y: 70
         width: 10
         height: 10
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6d6f537a69454bf20800000000000000
-      internalID: 3437465421617690326
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Teto_15
-      rect:
-        serializedVersion: 2
-        x: 20
-        y: 60
-        width: 10
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 982774dd75a4ac090800000000000000
-      internalID: -8013510845717319031
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Teto_16
-      rect:
-        serializedVersion: 2
-        x: 30
-        y: 60
-        width: 10
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9db58454567f86140800000000000000
-      internalID: 4713289024369351641
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Teto_17
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 50
-        width: 10
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9e908002daa409d70800000000000000
-      internalID: 9047813758814521833
+      spriteID: 1fa4b9684dbfbede0800000000000000
+      internalID: -1302670776983663887
       vertices: []
       indices: 
       edges: []
@@ -591,82 +657,19 @@ TextureImporter:
       name: Teto_18
       rect:
         serializedVersion: 2
-        x: 10
-        y: 50
-        width: 10
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 56870398c27807a80800000000000000
-      internalID: -8471122273733937051
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Teto_19
-      rect:
-        serializedVersion: 2
-        x: 20
-        y: 50
-        width: 10
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0cb2781ea0d6d4570800000000000000
-      internalID: 8452531969145121728
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Teto_20
-      rect:
-        serializedVersion: 2
         x: 30
-        y: 50
+        y: 60
         width: 10
         height: 10
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ce380c9126acce200800000000000000
-      internalID: 210765805267223532
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Teto_21
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 40
-        width: 10
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4ce7753fb85986ea0800000000000000
-      internalID: -5879284885216592188
+      spriteID: 4bde74930a79002f0800000000000000
+      internalID: -1008639602119414348
       vertices: []
       indices: 
       edges: []
@@ -675,82 +678,19 @@ TextureImporter:
       name: Teto_22
       rect:
         serializedVersion: 2
-        x: 10
-        y: 40
-        width: 10
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 60a52d10c51d860e0800000000000000
-      internalID: -2276339418538026490
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Teto_23
-      rect:
-        serializedVersion: 2
-        x: 20
-        y: 40
-        width: 10
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: df7f9075043bdb580800000000000000
-      internalID: -8809688207147272195
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Teto_24
-      rect:
-        serializedVersion: 2
         x: 30
-        y: 40
+        y: 50
         width: 10
         height: 10
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 46b5ab6ad459523d0800000000000000
-      internalID: -3232012996826211484
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Teto_25
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 30
-        width: 10
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fba494c5d9f22ffa0800000000000000
-      internalID: -5768495819803505985
+      spriteID: cd3daceaf12789740800000000000000
+      internalID: 5158998853554983900
       vertices: []
       indices: 
       edges: []
@@ -759,82 +699,19 @@ TextureImporter:
       name: Teto_26
       rect:
         serializedVersion: 2
-        x: 10
-        y: 30
-        width: 10
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1e18a7c3314f86170800000000000000
-      internalID: 8172049887319982561
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Teto_27
-      rect:
-        serializedVersion: 2
-        x: 20
-        y: 30
-        width: 10
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 93558f59f6a4ff020800000000000000
-      internalID: 2377700971392816441
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Teto_28
-      rect:
-        serializedVersion: 2
         x: 30
-        y: 30
+        y: 40
         width: 10
         height: 10
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c6683c04cf15ecaa0800000000000000
-      internalID: -6138879098199243156
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Teto_29
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 20
-        width: 10
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c350dfceb8a43cf90800000000000000
-      internalID: -6934617036383517380
+      spriteID: c25039a2862690a20800000000000000
+      internalID: 3029060423913768236
       vertices: []
       indices: 
       edges: []
@@ -843,82 +720,19 @@ TextureImporter:
       name: Teto_30
       rect:
         serializedVersion: 2
-        x: 10
-        y: 20
-        width: 10
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 883a9d868b5ecc690800000000000000
-      internalID: -7580431492575550584
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Teto_31
-      rect:
-        serializedVersion: 2
-        x: 20
-        y: 20
-        width: 10
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 633746bda8d483990800000000000000
-      internalID: -7406084328429161674
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Teto_32
-      rect:
-        serializedVersion: 2
         x: 30
-        y: 20
+        y: 30
         width: 10
         height: 10
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1ac2bf6417dd54460800000000000000
-      internalID: 7225424655777737889
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Teto_33
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 10
-        width: 10
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4dc549eb72ab71380800000000000000
-      internalID: -9000520650412761900
+      spriteID: 9ab17e261809362c0800000000000000
+      internalID: -4439545922272683095
       vertices: []
       indices: 
       edges: []
@@ -927,82 +741,19 @@ TextureImporter:
       name: Teto_34
       rect:
         serializedVersion: 2
-        x: 10
-        y: 10
-        width: 10
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 572896927f2f09b20800000000000000
-      internalID: 3139276083642860149
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Teto_35
-      rect:
-        serializedVersion: 2
-        x: 20
-        y: 10
-        width: 10
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c0ca588cdc712f550800000000000000
-      internalID: 6193038610187791372
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Teto_36
-      rect:
-        serializedVersion: 2
         x: 30
-        y: 10
+        y: 20
         width: 10
         height: 10
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5c15ba947d5190570800000000000000
-      internalID: 8433295791626080709
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Teto_37
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 10
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dfbd058dc8cee5ad0800000000000000
-      internalID: -2711469835961705475
+      spriteID: 1eb261b52a04abed0800000000000000
+      internalID: -2397532785564308511
       vertices: []
       indices: 
       edges: []
@@ -1011,25 +762,25 @@ TextureImporter:
       name: Teto_38
       rect:
         serializedVersion: 2
-        x: 10
-        y: 0
+        x: 30
+        y: 10
         width: 10
         height: 10
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 846efe2ba852017e0800000000000000
-      internalID: -1796894973683046840
+      spriteID: 1eb4797c7dbd1e760800000000000000
+      internalID: 7485505775479507937
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Teto_39
+      name: Teto_42
       rect:
         serializedVersion: 2
         x: 20
@@ -1037,20 +788,20 @@ TextureImporter:
         width: 10
         height: 10
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9d25719b3c0fba700800000000000000
-      internalID: 552800102697620185
+      spriteID: a3a29fabe0c926c90800000000000000
+      internalID: -7178003268994782662
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Teto_40
+      name: Teto_15
       rect:
         serializedVersion: 2
         x: 30
@@ -1058,14 +809,14 @@ TextureImporter:
         width: 10
         height: 10
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ae4dacacaf88533e0800000000000000
-      internalID: -2074601442608753430
+      spriteID: 982774dd75a4ac090800000000000000
+      internalID: -8013510845717319031
       vertices: []
       indices: 
       edges: []
