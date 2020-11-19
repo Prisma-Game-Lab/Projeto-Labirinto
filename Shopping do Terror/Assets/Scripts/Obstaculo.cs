@@ -31,10 +31,10 @@ public class Obstaculo : MonoBehaviour
             
         }
 
-        if (other.gameObject.CompareTag("Player") && cont == true)
+        /*if (other.gameObject.CompareTag("Player") && cont == true)
         {
             this.setActive = false;
-        }
+        }*/
     }
 }
 
