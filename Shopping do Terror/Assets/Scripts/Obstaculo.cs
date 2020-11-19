@@ -8,6 +8,8 @@ public class Obstaculo : MonoBehaviour
     [Header("Lista de intens necessários para se passar pelo obstáculo.")]
     public List<GameObject> itenList = new List<GameObject>();
     public GameObject player;
+    [Header("Obstaulo que será desligado para deixar o player passar")]
+    public GameObject obstaculo;
     [Header("Precisa da energia para passar pelo obsstaculo?")]
     public bool energy;
     bool cont = false;
@@ -31,10 +33,10 @@ public class Obstaculo : MonoBehaviour
             
         }
 
-        /*if (other.gameObject.CompareTag("Player") && cont == true)
+        if (other.gameObject.CompareTag("Player") && cont == true)
         {
-            this.setActive = false;
-        }*/
+            obstaculo.SetActive(false);
+        }
     }
 }
 
