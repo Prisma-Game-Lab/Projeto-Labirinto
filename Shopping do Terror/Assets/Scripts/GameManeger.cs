@@ -3,17 +3,33 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Timer : MonoBehaviour
+public class GameManeger : MonoBehaviour
 {
+    /* Variaveis para o timer */
     public float seg = 0.0f;
     public float min = 0.0f;
     public float hora = 0.0f;
     public Text UITempo;
 
+
+    /* Variaveis para a energia */
+    public bool eletricidade;
+
     void Awake()
     {
         DontDestroyOnLoad(this);
     }
+
+    void Start()
+    {
+        
+    }
+
+    void Update()
+    {
+        
+    }
+       
 
     void FixedUpdate()
     {
@@ -31,5 +47,4 @@ public class Timer : MonoBehaviour
             hora++;
         }
     }
-    
 }
