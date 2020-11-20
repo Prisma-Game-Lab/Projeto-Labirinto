@@ -5,13 +5,17 @@ using UnityEngine.SceneManagement;
 
 public class Obstaculo : MonoBehaviour
 {
+    public GameObject player;
+    [Header("Obstáculo que será desligado para deixar o player passar")]
+    public GameObject obstaculo;
+    [Header("Conecte o gameManeger aqui")]
+    public GameManeger gameManeger;
     [Header("Lista de intens necessários para se passar pelo obstáculo.")]
     public List<GameObject> itenList = new List<GameObject>();
-    public GameObject player;
-    [Header("Obstaulo que será desligado para deixar o player passar")]
-    public GameObject obstaculo;
-    [Header("Precisa da energia para passar pelo obsstaculo?")]
+    [Header("Precisa da energia para passar pelo obstáculo?")]
     public bool energy;
+    [Header("É indiferente a energia?")]
+    public bool indiferente;
     bool cont = false;
 
 
@@ -33,8 +37,13 @@ public class Obstaculo : MonoBehaviour
             
         }
 
-        if (other.gameObject.CompareTag("Player") && cont == true)
-        {
+        if (other.gameObject.CompareTag("Player") && cont == true && indiferente == true){
+            obstaculo.SetActive(false);
+        }
+        else if(other.gameObject.CompareTag("Player") && cont == true && energy == true && gameManeger.eletricidade == true){
+            obstaculo.SetActive(false);
+        }
+        else if(other.gameObject.CompareTag("Player") && cont == true && energy == true && gameManeger.eletricidade == false){
             obstaculo.SetActive(false);
         }
     }

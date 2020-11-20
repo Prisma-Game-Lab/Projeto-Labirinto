@@ -16,7 +16,7 @@ public class GameManeger : MonoBehaviour
 
 
     /* Variaveis para a energia */
-    public bool eletricidade;
+    public bool eletricidade = true;
 
     void Awake()
     {
