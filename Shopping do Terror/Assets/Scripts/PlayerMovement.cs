@@ -8,6 +8,8 @@ public class PlayerMovement : MonoBehaviour {
     AudioSource audioSc;
     bool isMoving;
 
+    public Animator playerMov;
+
     void Start() {
         rb = GetComponent<Rigidbody2D>();
         audioSc = GetComponent<AudioSource>();
@@ -40,7 +42,8 @@ public class PlayerMovement : MonoBehaviour {
             inputX *= 0.5f;
             inputY *= 0.5f;
         }
-      
+        playerMov.SetFloat("VelX", inputX);
+        playerMov.SetFloat("VelY", inputY);
         rb.velocity = new Vector2(inputX * speed, inputY * speed);
     }
 }
