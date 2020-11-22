@@ -5,12 +5,11 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour {
     public float speed;
     private Rigidbody2D rb;
-    AudioSource audioSc;
+    public AudioSource passos;
     bool isMoving;
 
     void Start() {
         rb = GetComponent<Rigidbody2D>();
-        audioSc = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -24,13 +23,13 @@ public class PlayerMovement : MonoBehaviour {
         if (isMoving)
         {
             //e o audio ainda n tiver tocando ele toca o audio
-            if (!audioSc.isPlaying)
+            if (!passos.isPlaying)
             {
-                audioSc.Play();
+                passos.Play();
             }
         }
         else
-            audioSc.Stop();
+            passos.Stop();
 
     }
     void FixedUpdate() {

@@ -9,6 +9,8 @@ public class ObjectCollider : MonoBehaviour
     public GameObject Object;
 
     public ParticleSystem Particles;
+
+    public AudioSource somObjeto;
     
     public TextMeshProUGUI triggerText;
 
@@ -64,6 +66,7 @@ public class ObjectCollider : MonoBehaviour
             isTrigger = false;
             triggerText.gameObject.SetActive(true);
             StartCoroutine(DisableText());
+            somObjeto.Play();
         }
     }
 
