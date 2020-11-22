@@ -14,7 +14,7 @@ public class PlayerMovement : MonoBehaviour {
         rb = GetComponent<Rigidbody2D>();
     }
 
-    void Update()
+    private void Update()
     {
         //checo de o player esta se movendo e atribuo a booleana
         if (rb.velocity.x != 0 || rb.velocity.y != 0)
