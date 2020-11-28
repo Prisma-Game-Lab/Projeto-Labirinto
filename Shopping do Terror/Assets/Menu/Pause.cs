@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Pause : MonoBehaviour
 {
@@ -14,11 +15,11 @@ public class Pause : MonoBehaviour
         isPaused = true;
     }
 
-     public void ResumeGame () {
+    public void ResumeGame () {
         pauseMenu.SetActive(false);
         Time.timeScale = 1f;
         isPaused = false;
-     }
+    } 
 
     void Update() {
         if (Input.GetKeyDown(KeyCode.Escape)) {
