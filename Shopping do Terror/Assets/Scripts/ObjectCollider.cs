@@ -57,12 +57,33 @@ public class ObjectCollider : MonoBehaviour
     void PressZ() {
         if (Input.GetKeyDown("z")) {
             Particles.Stop();
-            objectList.Add(Other.name);
-            objectListCopy.Add(Other.name);
-            Other.SetActive(false);
-            count++;
-            objectCountScript.CountText(count);
-            triggerText.text = "Voce pegou o objeto!";
+            if (Other.name == "Carteira"){
+                objectList.Add("Cartão de funcionário");
+                objectListCopy.Add("Cartão de funcionário");
+                objectList.Add("Moeda");
+                objectListCopy.Add("Moeda");
+                Other.SetActive(false);
+                count++;
+                objectCountScript.CountText(count);
+                triggerText.text = "Voce pegou dois objetos!";
+            }
+            else if (Other.name == "Máquina de Lanches" && objectListCopy.Contains("Moeda")){
+                objectList.Remove("Moeda");
+                objectListCopy.Remove("Moeda");
+                objectList.Add("Lanche");
+                objectListCopy.Add("Lanche");
+                count++;
+                objectCountScript.CountText(count);
+                triggerText.text = "Voce ganhou um Lanche!";
+            }
+            else{
+                objectList.Add(Other.name);
+                objectListCopy.Add(Other.name);
+                Other.SetActive(false);
+                count++;
+                objectCountScript.CountText(count);
+                triggerText.text = "Voce pegou o objeto!";
+            }
             isTrigger = false;
             triggerText.gameObject.SetActive(true);
             StartCoroutine(DisableText());
