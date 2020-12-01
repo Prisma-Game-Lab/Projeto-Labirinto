@@ -67,7 +67,7 @@ public class ObjectCollider : MonoBehaviour
                 objectCountScript.CountText(count);
                 triggerText.text = "Voce pegou dois objetos!";
             }
-            else if (Other.name == "Máquina de Lanches" && objectListCopy.Contains("Moeda")){
+            else if (Other.name == "Máquina de Lanches" && objectList.Contains("Moeda")){
                 objectList.Remove("Moeda");
                 objectListCopy.Remove("Moeda");
                 objectList.Add("Lanche");
@@ -75,6 +75,15 @@ public class ObjectCollider : MonoBehaviour
                 count++;
                 objectCountScript.CountText(count);
                 triggerText.text = "Voce ganhou um Lanche!";
+            }
+            else if (Other.name == "Chave quebrada" && objectList.Contains("Super cola")){
+                objectList.Remove("Chave quebrada");
+                objectListCopy.Remove("Chave quebrada");
+                objectList.Add("Chave inteira");
+                objectListCopy.Add("Chave inteira");
+                count++;
+                objectCountScript.CountText(count);
+                triggerText.text = "Voce o objeto!";
             }
             else{
                 objectList.Add(Other.name);
