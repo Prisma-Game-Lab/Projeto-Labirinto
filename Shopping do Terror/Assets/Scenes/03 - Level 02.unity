@@ -12578,7 +12578,7 @@ MonoBehaviour:
   itenList:
   - {fileID: 0}
   energy: 0
-  indiferente: 1
+  indiferente: 0
 --- !u!114 &788903883 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1236968246643747527, guid: 00d3dbc2bf059964184f6d25f84ab51d,
