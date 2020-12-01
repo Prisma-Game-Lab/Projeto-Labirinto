@@ -5,6 +5,8 @@ using TMPro;
 
 public class ObjectCollider : MonoBehaviour
 {
+    public GameManeger gameManeger;
+
     [Tooltip("Referencia texto que conta objetos")]
     public GameObject Object;
 
@@ -17,6 +19,7 @@ public class ObjectCollider : MonoBehaviour
     private ObjectCount objectCountScript;
 
     static public List<string> objectList = new List<string>();
+    [HideInInspector]
     public List<string> objectListCopy = new List<string>();
 
     static private int count = 0;
@@ -67,7 +70,7 @@ public class ObjectCollider : MonoBehaviour
                 objectCountScript.CountText(count);
                 triggerText.text = "Voce pegou dois objetos!";
             }
-            else if (Other.name == "Máquina de Lanches" && objectList.Contains("Moeda")){
+            else if (Other.name == "Máquina de Lanches" && objectList.Contains("Moeda") && gameManeger.eletricidade  == true){
                 objectList.Remove("Moeda");
                 objectListCopy.Remove("Moeda");
                 objectList.Add("Lanche");
