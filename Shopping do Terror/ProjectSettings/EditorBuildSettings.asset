@@ -5,15 +5,6 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/Testes/Level test.unity
-    guid: 2144da080cfa80744b4e76ea52d16559
-  - enabled: 0
-    path: Assets/Scenes/Testes/Teste de Luz.unity
-    guid: 47c2714fea2014a8fa0ddc9b931cf381
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/00 - Menu Inicial.unity
     guid: 83c4e8f0cd1f84430965ff8cfdfbe9d6
@@ -24,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/02 - Level 01.unity
     guid: b5d81a1284147402489adc2d0aa4c3de
   - enabled: 1
-    path: Assets/Scenes/Testes/Level 1 test.unity
-    guid: 42b9d42998c3f8b4caad131b000b0be9
+    path: Assets/Scenes/03 - Level 02.unity
+    guid: 6274e7992e557264d9b5a46c4904b424
+  - enabled: 1
+    path: Assets/Scenes/04 - Level 03.unity
+    guid: a0fba7f60eb78ee4fa6c3f32586dbb55
   m_configObjects: {}
