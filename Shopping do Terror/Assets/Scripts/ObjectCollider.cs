@@ -45,7 +45,7 @@ public class ObjectCollider : MonoBehaviour
             isTrigger = true;
             Particles.Play();
             triggerText.gameObject.SetActive(true);
-            triggerText.text = "Aperte Z para interagir";
+            triggerText.text = "Aperte E para interagir";
         }
     }
 
@@ -58,7 +58,7 @@ public class ObjectCollider : MonoBehaviour
     }
 
     void PressZ() {
-        if (Input.GetKeyDown("z")) {
+        if (Input.GetKeyDown("e")) {
             Particles.Stop();
             if (Other.name == "Carteira"){
                 objectList.Add("Cartão de funcionário");

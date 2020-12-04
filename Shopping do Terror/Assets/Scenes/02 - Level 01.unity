@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -13863,10 +13863,46 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1236968247037002796, guid: 00d3dbc2bf059964184f6d25f84ab51d,
+        type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 15e9725ed41fb4b40b7688b2e022f336,
+        type: 3}
+    - target: {fileID: 1236968247037002796, guid: 00d3dbc2bf059964184f6d25f84ab51d,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 68
+      objectReference: {fileID: 0}
+    - target: {fileID: 1236968247037002796, guid: 00d3dbc2bf059964184f6d25f84ab51d,
+        type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1236968247037002796, guid: 00d3dbc2bf059964184f6d25f84ab51d,
+        type: 3}
+      propertyPath: m_FontData.m_MaxSize
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 1236968247037002796, guid: 00d3dbc2bf059964184f6d25f84ab51d,
+        type: 3}
+      propertyPath: m_FontData.m_HorizontalOverflow
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1236968247037002796, guid: 00d3dbc2bf059964184f6d25f84ab51d,
+        type: 3}
+      propertyPath: m_FontData.m_VerticalOverflow
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1236968247037002797, guid: 00d3dbc2bf059964184f6d25f84ab51d,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 455
+      value: 469.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1236968247037002797, guid: 00d3dbc2bf059964184f6d25f84ab51d,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -762.7
       objectReference: {fileID: 0}
     - target: {fileID: 1236968247494674613, guid: 00d3dbc2bf059964184f6d25f84ab51d,
         type: 3}
