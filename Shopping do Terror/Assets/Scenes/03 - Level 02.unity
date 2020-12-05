@@ -747,6 +747,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Maquina de lanche
       objectReference: {fileID: 0}
+    - target: {fileID: 8369638717661305982, guid: bb133dfe152846143aa923a4f2526282,
+        type: 3}
+      propertyPath: looping
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb133dfe152846143aa923a4f2526282, type: 3}
 --- !u!4 &121737051 stripped
@@ -3668,6 +3673,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Chave quebrada
+      objectReference: {fileID: 0}
+    - target: {fileID: 8369638717661305982, guid: bb133dfe152846143aa923a4f2526282,
+        type: 3}
+      propertyPath: looping
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb133dfe152846143aa923a4f2526282, type: 3}
@@ -14365,6 +14375,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Super cola
       objectReference: {fileID: 0}
+    - target: {fileID: 8369638717661305982, guid: bb133dfe152846143aa923a4f2526282,
+        type: 3}
+      propertyPath: looping
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb133dfe152846143aa923a4f2526282, type: 3}
 --- !u!4 &975515967 stripped
@@ -17773,6 +17788,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Carteira
+      objectReference: {fileID: 0}
+    - target: {fileID: 8369638717661305982, guid: bb133dfe152846143aa923a4f2526282,
+        type: 3}
+      propertyPath: looping
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb133dfe152846143aa923a4f2526282, type: 3}
