@@ -18,9 +18,14 @@ public class SpawnPoint : MonoBehaviour
         GameObject player = GameObject.FindWithTag("Player");
         player.transform.position = this.transform.position;
 
+
+        /* Verificar se o player já pegou os itens do andar */
+        /* Caso o player não tenha já pegado os itens o spawn deles sera feito */
         for( aux = 0; aux < objList.Length; aux++)
         {
-            objList[aux].transform.position = spawnList[aux].transform.position;
+            if (!player.GetComponent<ObjectCollider>().objectListCopy.Contains(objList[aux].name)){
+                objList[aux].transform.position = spawnList[aux].transform.position;
+            }
         }
     }
 
