@@ -12,25 +12,33 @@ public class GameManeger : MonoBehaviour
     public float min = 0.0f;
     [System.NonSerialized]
     public float hora = 0.0f;
+    public GameObject CanvasUI;
     public Text UITempo;
-
 
     /* Variaveis para a energia */
     public bool eletricidade = true;
 
+    /* Variaveis para terimnar o jogo*/
+    public GameObject GameOverUI;
+    public float bateryTimeMin;
+
     void Awake()
     {
         DontDestroyOnLoad(this);
+        DontDestroyOnLoad(CanvasUI);
     }
 
     void Start()
     {
-        
+        GameOverUI.SetActive(false);
     }
 
     void Update()
     {
-        
+        if(min == bateryTimeMin)
+        {
+            GameOver();
+        }
     }
        
 
@@ -49,5 +57,12 @@ public class GameManeger : MonoBehaviour
             min = 0.0f;
             hora++;
         }
+    }
+
+    void GameOver()
+    {
+        GameOverUI.SetActive(true);
+        Time.timeScale = 0f;
+
     }
 }

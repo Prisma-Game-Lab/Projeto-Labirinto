@@ -19,7 +19,6 @@ public class ObjectCollider : MonoBehaviour
     private ObjectCount objectCountScript;
 
     static public List<string> objectList = new List<string>();
-    [HideInInspector]
     public List<string> objectListCopy = new List<string>();
 
     static private int count = 0;
