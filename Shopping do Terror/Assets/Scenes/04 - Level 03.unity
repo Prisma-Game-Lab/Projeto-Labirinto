@@ -542,54 +542,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 66480897}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &89026168
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 89026170}
-  - component: {fileID: 89026169}
-  m_Layer: 0
-  m_Name: GameManeger
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &89026169
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 89026168}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8c2abb7a1abae94f87f3b294015608d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CanvasUI: {fileID: 0}
-  UITempo: {fileID: 0}
-  eletricidade: 1
-  GameOverUI: {fileID: 0}
-  bateryTimeMin: 0
---- !u!4 &89026170
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 89026168}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -68.41, y: 19.16, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &104278286
 GameObject:
   m_ObjectHideFlags: 0
@@ -713,7 +665,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 56013231}
   obstaculo: {fileID: 104278286}
-  gameManeger: {fileID: 89026169}
+  gameManeger: {fileID: 0}
   itenList:
   - {fileID: 0}
   energy: 1
@@ -937,7 +889,7 @@ Transform:
   - {fileID: 1276646278}
   - {fileID: 556415582}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &472106809
 GameObject:
@@ -11487,7 +11439,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 56013231}
   obstaculo: {fileID: 964986296}
-  gameManeger: {fileID: 89026169}
+  gameManeger: {fileID: 0}
   itenList:
   - {fileID: 0}
   energy: 1
