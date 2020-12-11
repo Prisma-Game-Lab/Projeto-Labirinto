@@ -24,7 +24,7 @@ public class Obstaculo : MonoBehaviour
         //caso o player tenha os itens (que estão no script ObjectCollider) ele desliga o objeto e permite o player passar
         for(int i = 0; i < itenList.Count; i++)
         {
-            if (player.GetComponent<ObjectCollider>().objectListCopy.Contains(itenList[i].name))
+            if (player.GetComponent<ObjectCollider>().objectList.Contains(itenList[i].name))
             {
                 cont = true;
             }

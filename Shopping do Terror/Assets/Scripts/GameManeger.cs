@@ -22,13 +22,7 @@ public class GameManeger : MonoBehaviour
     public GameObject GameOverUI;
     public float bateryTimeMin;
 
-    /*void Awake()
-    {
-        DontDestroyOnLoad(this);
-        DontDestroyOnLoad(CanvasUI);
-    }*/
-
-    void Start()
+    void Awake()
     {
         GameOverUI.SetActive(false);
         int elet = PlayerPrefs.GetInt("Eletricidade");
@@ -84,7 +78,6 @@ public class GameManeger : MonoBehaviour
         else
         {
             PlayerPrefs.SetInt("Eletricidade", 1);
-        }
-        
+        } 
     }
 }
