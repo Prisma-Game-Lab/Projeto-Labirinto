@@ -20,7 +20,6 @@ public class ObjectCollider : MonoBehaviour
 
     static public List<string> objectList = new List<string>();
     public List<string> objectListCopy = new List<string>();
-    public string[] listaTeste;
 
     static private int count = 0;
 
@@ -32,8 +31,27 @@ public class ObjectCollider : MonoBehaviour
     void Start() {
         Particles.Stop();
         objectCountScript = Object.GetComponent<ObjectCount>();
-        objectListCopy = objectList;
-        objectList.CopyTo(listaTeste);
+        /*objectListCopy = objectList;
+        objectList.CopyTo(listaTeste);*/
+    }
+
+    void Awake()
+    {
+        /* Recuperando os itens quando se troca de cena */
+        int quantItens = PlayerPrefs.GetInt("Quant_Itens");
+        for (int i = 0; i < quantItens; i++)
+        {
+            objectListCopy.Add(PlayerPrefs.GetString("item_" + i));
+        }
+    }
+
+    void OnDestroy()
+    {
+        PlayerPrefs.SetInt("Quant_Itens", objectListCopy.Count);
+        for (int i = 0; i < objectListCopy.Count; i++)
+        {
+            PlayerPrefs.SetString("item_" + i, objectListCopy[i]);
+        }
     }
 
     void Update() {
