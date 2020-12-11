@@ -31,6 +31,15 @@ public class GameManeger : MonoBehaviour
     void Start()
     {
         GameOverUI.SetActive(false);
+        int elet = PlayerPrefs.GetInt("Eletricidade");
+        if (elet == 0)
+        {
+            eletricidade = true;
+        }
+        else if(elet == 1)
+        {
+            eletricidade = false;
+        }
     }
 
     void Update()
@@ -64,5 +73,18 @@ public class GameManeger : MonoBehaviour
         GameOverUI.SetActive(true);
         Time.timeScale = 0f;
 
+    }
+
+    void OnDestroy()
+    {
+        if(eletricidade == true)
+        {
+            PlayerPrefs.SetInt("Eletricidade", 0);
+        }
+        else
+        {
+            PlayerPrefs.SetInt("Eletricidade", 1);
+        }
+        
     }
 }
