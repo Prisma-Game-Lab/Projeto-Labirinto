@@ -301,27 +301,27 @@ PrefabInstance:
         type: 3}
       propertyPath: RdSpookySounds.Array.data[0]
       value: 
-      objectReference: {fileID: 8300000, guid: 0b5b4d222c0d65b45af5f8332b6c4106, type: 3}
+      objectReference: {fileID: 8300000, guid: 9f6799f0edd5b3b43b47941a0085f959, type: 3}
     - target: {fileID: -5339280966088820831, guid: 910cf55de20e527469a0543c654ef470,
         type: 3}
       propertyPath: RdSpookySounds.Array.data[1]
       value: 
-      objectReference: {fileID: 8300000, guid: 54c62029f80555645800109684b7241b, type: 3}
+      objectReference: {fileID: 8300000, guid: 6ce15484a933b86499b5c6a34a538b4c, type: 3}
     - target: {fileID: -5339280966088820831, guid: 910cf55de20e527469a0543c654ef470,
         type: 3}
       propertyPath: RdSpookySounds.Array.data[2]
       value: 
-      objectReference: {fileID: 8300000, guid: d3659b6cfa4079e4e86212d698a6ed3f, type: 3}
+      objectReference: {fileID: 8300000, guid: 0cf032ff757dd7e4d9054b70e138d7a2, type: 3}
     - target: {fileID: -5339280966088820831, guid: 910cf55de20e527469a0543c654ef470,
         type: 3}
       propertyPath: RdSpookySounds.Array.data[3]
       value: 
-      objectReference: {fileID: 8300000, guid: 4bad3f3d05f48fd4686633554129dc55, type: 3}
+      objectReference: {fileID: 8300000, guid: 6afd2f1eeadf06f44820cb142cbdb43a, type: 3}
     - target: {fileID: -5339280966088820831, guid: 910cf55de20e527469a0543c654ef470,
         type: 3}
       propertyPath: RdSpookySounds.Array.data[4]
       value: 
-      objectReference: {fileID: 8300000, guid: ec3e9f1633707fb4c9d3ae2aa7f97830, type: 3}
+      objectReference: {fileID: 8300000, guid: fbebf77c89104854ebc2b29b0ad8f308, type: 3}
     - target: {fileID: -5339280966088820831, guid: 910cf55de20e527469a0543c654ef470,
         type: 3}
       propertyPath: m_Enabled
@@ -478,7 +478,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.46
+  m_Volume: 0.823
   m_Pitch: 1
   Loop: 0
   Mute: 0
