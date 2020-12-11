@@ -20,16 +20,20 @@ public class ObjectCollider : MonoBehaviour
 
     static public List<string> objectList = new List<string>();
     public List<string> objectListCopy = new List<string>();
+    public string[] listaTeste;
 
     static private int count = 0;
 
     private GameObject Other;
 
     private bool isTrigger = false;
+    static public bool energy = true;
 
     void Start() {
         Particles.Stop();
         objectCountScript = Object.GetComponent<ObjectCount>();
+        objectListCopy = objectList;
+        objectList.CopyTo(listaTeste);
     }
 
     void Update() {
@@ -69,7 +73,7 @@ public class ObjectCollider : MonoBehaviour
                 objectCountScript.CountText(count);
                 triggerText.text = "Voce pegou dois objetos!";
             }
-            else if (Other.name == "Máquina de Lanches" && objectList.Contains("Moeda") && gameManeger.eletricidade  == true){
+            else if (Other.name == "Máquina de Lanches" && objectList.Contains("Moeda") && /*gameManeger.eletricidade*/ energy == true){
                 objectList.Remove("Moeda");
                 objectListCopy.Remove("Moeda");
                 objectList.Add("Lanche");
@@ -86,6 +90,18 @@ public class ObjectCollider : MonoBehaviour
                 count++;
                 objectCountScript.CountText(count);
                 triggerText.text = "Voce o objeto!";
+            }
+            else if(Other.name == "PAINEL DE ENERGIA"){
+                if (energy == true)
+                {
+                    energy = false;
+                    Debug.Log("Energia desligada");
+                }
+                else
+                {
+                    energy = true;
+                    Debug.Log("Energia ligada");
+                }
             }
             else{
                 objectList.Add(Other.name);

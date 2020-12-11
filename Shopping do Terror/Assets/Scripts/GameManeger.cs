@@ -7,11 +7,11 @@ public class GameManeger : MonoBehaviour
 {
     /* Variaveis para o timer */
     [System.NonSerialized]
-    public float seg = 0.0f;
+    static public float seg = 0.0f;
     [System.NonSerialized]
-    public float min = 0.0f;
+    static public float min = 0.0f;
     [System.NonSerialized]
-    public float hora = 0.0f;
+    static public float hora = 0.0f;
     public GameObject CanvasUI;
     public Text UITempo;
 
@@ -22,11 +22,11 @@ public class GameManeger : MonoBehaviour
     public GameObject GameOverUI;
     public float bateryTimeMin;
 
-    void Awake()
+    /*void Awake()
     {
         DontDestroyOnLoad(this);
         DontDestroyOnLoad(CanvasUI);
-    }
+    }*/
 
     void Start()
     {

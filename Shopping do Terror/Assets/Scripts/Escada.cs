@@ -18,7 +18,7 @@ public class Escada : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player") && cont == true)
         {
-            DontDestroyOnLoad(other.gameObject);
+            //DontDestroyOnLoad(other.gameObject);
             SceneManager.LoadScene(SceneName, LoadSceneMode.Single);
         }
     }
