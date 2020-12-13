@@ -1,0 +1,488 @@
+fileFormatVersion: 2
+guid: c37190b2abbcfcb45a63748a5025bff9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8975602242726141206
+    second: Spritesheet personagem simbolos_0
+  - first:
+      213: -3189079404800851656
+    second: Spritesheet personagem simbolos_1
+  - first:
+      213: -8249961715113189186
+    second: Spritesheet personagem simbolos_2
+  - first:
+      213: -4461414729541712552
+    second: Spritesheet personagem simbolos_3
+  - first:
+      213: -5834555215554944935
+    second: Spritesheet personagem simbolos_4
+  - first:
+      213: -383115336373986873
+    second: Spritesheet personagem simbolos_5
+  - first:
+      213: 5597945771229337559
+    second: Spritesheet personagem simbolos_6
+  - first:
+      213: -1061956689219952873
+    second: Spritesheet personagem simbolos_7
+  - first:
+      213: 7965503343071509056
+    second: Spritesheet personagem simbolos_8
+  - first:
+      213: 4621621272276734424
+    second: Spritesheet personagem simbolos_9
+  - first:
+      213: 889862658935941508
+    second: Spritesheet personagem simbolos_10
+  - first:
+      213: 5859609604318092768
+    second: Spritesheet personagem simbolos_11
+  - first:
+      213: -1916943984614059931
+    second: Spritesheet personagem simbolos_12
+  - first:
+      213: -2693820801020407036
+    second: Spritesheet personagem simbolos_13
+  - first:
+      213: 7472164988444683457
+    second: Spritesheet personagem simbolos_14
+  - first:
+      213: -1917790102580837793
+    second: Spritesheet personagem simbolos_15
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Spritesheet personagem simbolos_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 105
+        width: 20
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61d14ea5faebf8c70800000000000000
+      internalID: 8975602242726141206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet personagem simbolos_1
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 104
+        width: 19
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 831c4548d2d1eb3d0800000000000000
+      internalID: -3189079404800851656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet personagem simbolos_2
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 105
+        width: 20
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb02b10c78f328d80800000000000000
+      internalID: -8249961715113189186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet personagem simbolos_3
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 104
+        width: 21
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85588f9e0fed512c0800000000000000
+      internalID: -4461414729541712552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet personagem simbolos_4
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 71
+        width: 20
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 950e17ab1fe770fa0800000000000000
+      internalID: -5834555215554944935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet personagem simbolos_5
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 70
+        width: 19
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c99c63a1a6eeaaf0800000000000000
+      internalID: -383115336373986873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet personagem simbolos_6
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 71
+        width: 20
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d7560e0506efad40800000000000000
+      internalID: 5597945771229337559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet personagem simbolos_7
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 70
+        width: 20
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71fd134840c2341f0800000000000000
+      internalID: -1061956689219952873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet personagem simbolos_8
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 36
+        width: 20
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04ab6f466172b8e60800000000000000
+      internalID: 7965503343071509056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet personagem simbolos_9
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 36
+        width: 18
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d1917c8f0c432040800000000000000
+      internalID: 4621621272276734424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet personagem simbolos_10
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 36
+        width: 20
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 489e2c4af5d695c00800000000000000
+      internalID: 889862658935941508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet personagem simbolos_11
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 36
+        width: 21
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0edd8dbb3e3815150800000000000000
+      internalID: 5859609604318092768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet personagem simbolos_12
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 2
+        width: 19
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 560d1c63a95a565e0800000000000000
+      internalID: -1916943984614059931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet personagem simbolos_13
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 2
+        width: 19
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 403de920140ad9ad0800000000000000
+      internalID: -2693820801020407036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet personagem simbolos_14
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 2
+        width: 19
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cc2b5fb77672b760800000000000000
+      internalID: 7472164988444683457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet personagem simbolos_15
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 2
+        width: 20
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f52c8e50014a265e0800000000000000
+      internalID: -1917790102580837793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
