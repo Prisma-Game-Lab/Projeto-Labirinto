@@ -18,6 +18,16 @@ public class Obstaculo : MonoBehaviour
     public bool indiferente;
     bool cont = false;
 
+    private void Start()
+    {
+        for (int i = 0; i < itenList.Count; i++)
+        {
+            if (player.GetComponent<ObjectCollider>().objectList.Contains(itenList[i].name))
+            {
+                this.gameObject.SetActive(false);
+            }
+        }
+    }
 
     void OnCollisionEnter2D(Collision2D other)
     {
