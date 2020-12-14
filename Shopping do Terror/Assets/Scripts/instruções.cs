@@ -8,6 +8,7 @@ public class instruções : MonoBehaviour
     void Start()
     {
         Time.timeScale = 0.0f;
+        PlayerPrefs.DeleteAll();
     }
     void Update()
     {
