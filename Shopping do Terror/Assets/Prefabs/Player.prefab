@@ -226,8 +226,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.15095729, y: -1.6755624}
-  m_Size: {x: 2.0583065, y: 0.40668494}
+  m_Offset: {x: 0.15095729, y: -2.01}
+  m_Size: {x: 2.5, y: 0.40668494}
   m_Direction: 1
 --- !u!50 &6783228056907265389
 Rigidbody2D:
@@ -267,7 +267,8 @@ MonoBehaviour:
   Particles: {fileID: 0}
   somObjeto: {fileID: 2118473756695358945}
   triggerText: {fileID: 0}
-  objectListCopy: []
+  objectList: []
+  energy: 1
 --- !u!114 &-3662796527147715749
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -504,6 +505,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32196feb75a8e6042a1972568f2f112a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _as: {fileID: 0}
+  RdSpookySounds: []
 --- !u!1 &6783228057001649319
 GameObject:
   m_ObjectHideFlags: 0
