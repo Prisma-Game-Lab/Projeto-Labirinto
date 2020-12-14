@@ -4,14 +4,19 @@ using UnityEngine;
 
 public class instruções : MonoBehaviour
 {
+    bool isActive = true;
     void Start()
     {
         Time.timeScale = 0.0f;
     }
     void Update()
     {
-        if (Input.GetKeyDown("e")){
+        
+        if (Input.GetKeyDown("e") && isActive == true){
             Time.timeScale = 1f;
+            this.gameObject.SetActive(false);
+            isActive = false;
         }
+        
     }
 }
