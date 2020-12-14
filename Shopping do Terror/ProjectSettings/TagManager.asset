@@ -42,6 +42,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Gambiarra
+    uniqueID: 1134261493
+    locked: 0
   - name: particles
     uniqueID: 282263777
     locked: 0
