@@ -23,7 +23,7 @@ public class SpawnPoint : MonoBehaviour
         /* Caso o player não tenha já pegado os itens o spawn deles sera feito */
         for( aux = 0; aux < objList.Length; aux++)
         {
-            if (!player.GetComponent<ObjectCollider>().objectListCopy.Contains(objList[aux].name)){
+            if (!player.GetComponent<ObjectCollider>().objectList.Contains(objList[aux].name)){
                 objList[aux].transform.position = spawnList[aux].transform.position;
             }
         }
