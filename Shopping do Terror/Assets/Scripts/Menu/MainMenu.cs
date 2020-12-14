@@ -8,6 +8,7 @@ public class MainMenu : MonoBehaviour
     public void LoadMainScene()
     {
         SceneManager.LoadScene("02 - Level 01");
+        PlayerPrefs.DeleteAll();
     }
 
     public void LoadCreditsScene()

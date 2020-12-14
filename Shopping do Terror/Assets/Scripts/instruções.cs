@@ -7,8 +7,8 @@ public class instruções : MonoBehaviour
     bool isActive = true;
     void Start()
     {
+        this.gameObject.SetActive(true);
         Time.timeScale = 0.0f;
-        PlayerPrefs.DeleteAll();
     }
     void Update()
     {
