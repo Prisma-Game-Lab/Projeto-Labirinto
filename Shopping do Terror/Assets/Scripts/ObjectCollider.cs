@@ -13,7 +13,7 @@ public class ObjectCollider : MonoBehaviour
     public ParticleSystem Particles;
 
     public AudioSource somObjeto;
-    
+
     public TextMeshProUGUI triggerText;
 
     private ObjectCount objectCountScript;
@@ -29,7 +29,8 @@ public class ObjectCollider : MonoBehaviour
 
 
 
-    void Start() {
+    void Start()
+    {
         Particles.Stop();
         objectCountScript = Object.GetComponent<ObjectCount>();
         energy = gameManeger.eletricidade;
@@ -54,32 +55,55 @@ public class ObjectCollider : MonoBehaviour
         }
     }
 
-    void Update() {
-        if (isTrigger) { 
+    void Update()
+    {
+        if (isTrigger)
+        {
             PressZ();
         }
     }
 
-    void OnTriggerEnter2D(Collider2D other) {
+    void OnTriggerEnter2D(Collider2D other)
+    {
         Other = other.gameObject;
-        if (Other.CompareTag("Object")) {
+        if (Other.CompareTag("Object"))
+        {
             isTrigger = true;
             Particles.Play();
             triggerText.gameObject.SetActive(true);
             triggerText.text = "Aperte E para interagir";
         }
+
+        if (Other.name == "Fios")
+        {
+            if (energy == true)
+            {
+                Debug.Log("enconstou");
+                Other.GetComponent<BoxCollider2D>().enabled = true;
+                triggerText.text = "Você tomou um choque!";
+            }
+            if (energy == false)
+            {
+                Debug.Log("enconstou");
+                Other.GetComponent<BoxCollider2D>().enabled = false;
+            }
+        }
     }
 
-    void OnTriggerExit2D(Collider2D other) {
-        if (other.gameObject.CompareTag("Object")) {
+    void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Object"))
+        {
             Particles.Stop();
             triggerText.gameObject.SetActive(false);
             isTrigger = false;
-        } 
+        }
     }
 
-    void PressZ() {
-        if (Input.GetKeyDown("e")) {
+    void PressZ()
+    {
+        if (Input.GetKeyDown("e"))
+        {
             Particles.Stop();
             if (Other.name == "Carteira")
             {
@@ -91,9 +115,10 @@ public class ObjectCollider : MonoBehaviour
                 objectCountScript.CountText(count);
                 triggerText.text = "Voce pegou dois objetos!";
             }
-            else if (Other.name == "Máquina de Lanches")
+            else if (Other.name == "Maquina de Lanches")
             {
-                if (objectList.Contains("Moeda") && energy == true) {
+                if (objectList.Contains("Moeda") && energy == true)
+                {
                     objectList.Remove("Moeda");
                     objectList.Add("Lanche");
                     count++;
@@ -101,14 +126,20 @@ public class ObjectCollider : MonoBehaviour
                     triggerText.text = "Voce ganhou um Lanche!";
                 }
             }
-            else if (Other.name == "Chave quebrada" && objectList.Contains("Super cola")){
-                objectList.Remove("Chave quebrada");
-                objectList.Add("Chave inteira");
-                count++;
-                objectCountScript.CountText(count);
-                triggerText.text = "Voce o objeto!";
+            else if (Other.name == "Chave quebrada" )
+            {
+                if(objectList.Contains("Super cola"))
+                {
+                    objectList.Remove("Chave quebrada");
+                    objectList.Add("Chave inteira");
+                    count++;
+                    objectCountScript.CountText(count);
+                    triggerText.text = "Voce o objeto!";
+                }
+                
             }
-            else if(Other.name == "PAINEL DE ENERGIA"){
+            else if (Other.name == "PAINEL DE ENERGIA")
+            {
                 if (energy == true)
                 {
                     energy = false;
@@ -122,7 +153,8 @@ public class ObjectCollider : MonoBehaviour
                     Debug.Log("Energia ligada");
                 }
             }
-            else{
+            else
+            {
                 objectList.Add(Other.name);
                 Other.SetActive(false);
                 count++;
@@ -136,7 +168,8 @@ public class ObjectCollider : MonoBehaviour
         }
     }
 
-    private IEnumerator DisableText() {
+    private IEnumerator DisableText()
+    {
         yield return new WaitForSeconds(1.5f);
         triggerText.gameObject.SetActive(false);
     }
