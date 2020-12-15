@@ -66,6 +66,7 @@ public class GameManeger : MonoBehaviour
     {
         GameOverUI.SetActive(true);
         Time.timeScale = 0f;
+        Pause.cantPause = true;
 
     }
 

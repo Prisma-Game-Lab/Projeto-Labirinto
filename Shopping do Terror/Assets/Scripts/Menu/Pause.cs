@@ -6,6 +6,8 @@ public class Pause : MonoBehaviour
 {
     public static bool isPaused = false;
 
+    public static bool cantPause = false;
+
     public GameObject pauseMenu;
 
     void PauseGame () {
@@ -21,7 +23,7 @@ public class Pause : MonoBehaviour
     } 
 
     void Update() {
-        if (Input.GetKeyDown(KeyCode.Escape)) {
+        if (Input.GetKeyDown(KeyCode.Escape) && !cantPause) {
             if (isPaused) {
                 ResumeGame();
             }
