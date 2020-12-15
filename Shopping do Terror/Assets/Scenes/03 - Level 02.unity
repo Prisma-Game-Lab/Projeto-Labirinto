@@ -579,7 +579,7 @@ PrefabInstance:
     - target: {fileID: 8369638717661305956, guid: bb133dfe152846143aa923a4f2526282,
         type: 3}
       propertyPath: m_Name
-      value: Maquina de lanche
+      value: Maquina de Lanches
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb133dfe152846143aa923a4f2526282, type: 3}
@@ -15117,7 +15117,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 774512090}
-  - component: {fileID: 774512093}
   - component: {fileID: 774512092}
   - component: {fileID: 774512091}
   m_Layer: 0
@@ -15154,7 +15153,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.15231252, y: -0.10453606}
+  m_Offset: {x: -0.15231252, y: -0.58835423}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -15165,7 +15164,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 4.3951735, y: 4.8577957}
+  m_Size: {x: 4.3951735, y: 5.825432}
   m_EdgeRadius: 0
 --- !u!212 &774512092
 SpriteRenderer:
@@ -15217,25 +15216,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &774512093
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 774512089}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bad200b35f8f4a844bcdcc6a4f9000db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  obstaculo: {fileID: 774512089}
-  gameManeger: {fileID: 0}
-  itenList:
-  - {fileID: 0}
-  energy: 0
-  indiferente: 0
 --- !u!1 &871181228
 GameObject:
   m_ObjectHideFlags: 0
