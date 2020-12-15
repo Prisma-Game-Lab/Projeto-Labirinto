@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -15090,7 +15090,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 701898212}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1437053984}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
@@ -17634,6 +17634,12 @@ Transform:
   m_Father: {fileID: 973385757}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1437053984 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1236968247037002798, guid: 00d3dbc2bf059964184f6d25f84ab51d,
+    type: 3}
+  m_PrefabInstance: {fileID: 701898212}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1556521313
 GameObject:
   m_ObjectHideFlags: 0
@@ -18039,6 +18045,12 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1733763364}
   m_PrefabAsset: {fileID: 0}
+--- !u!198 &1733763367 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 8369638717661305982, guid: bb133dfe152846143aa923a4f2526282,
+    type: 3}
+  m_PrefabInstance: {fileID: 1733763364}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1781216480
 GameObject:
   m_ObjectHideFlags: 0
@@ -18232,6 +18244,16 @@ PrefabInstance:
       propertyPath: triggerText
       value: 
       objectReference: {fileID: 701898216}
+    - target: {fileID: 36661112938673499, guid: 910cf55de20e527469a0543c654ef470,
+        type: 3}
+      propertyPath: Particles
+      value: 
+      objectReference: {fileID: 1733763367}
+    - target: {fileID: 36661112938673499, guid: 910cf55de20e527469a0543c654ef470,
+        type: 3}
+      propertyPath: Object
+      value: 
+      objectReference: {fileID: 1437053984}
     - target: {fileID: 6783228056907265377, guid: 910cf55de20e527469a0543c654ef470,
         type: 3}
       propertyPath: m_LocalPosition.x

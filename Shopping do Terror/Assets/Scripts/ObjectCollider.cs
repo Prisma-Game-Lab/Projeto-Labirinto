@@ -81,7 +81,9 @@ public class ObjectCollider : MonoBehaviour
     void PressZ() {
         if (Input.GetKeyDown("e")) {
             Particles.Stop();
-            if (Other.name == "Carteira"){
+            if (Other.name == "Carteira")
+            {
+                Debug.Log("pegou a carteira.");
                 objectList.Add("Cartão de funcionário");
                 objectList.Add("Moeda");
                 Other.SetActive(false);
@@ -89,12 +91,15 @@ public class ObjectCollider : MonoBehaviour
                 objectCountScript.CountText(count);
                 triggerText.text = "Voce pegou dois objetos!";
             }
-            else if (Other.name == "Máquina de Lanches" && objectList.Contains("Moeda") &&  energy == true){
-                objectList.Remove("Moeda");
-                objectList.Add("Lanche");
-                count++;
-                objectCountScript.CountText(count);
-                triggerText.text = "Voce ganhou um Lanche!";
+            else if (Other.name == "Máquina de Lanches")
+            {
+                if (objectList.Contains("Moeda") && energy == true) {
+                    objectList.Remove("Moeda");
+                    objectList.Add("Lanche");
+                    count++;
+                    objectCountScript.CountText(count);
+                    triggerText.text = "Voce ganhou um Lanche!";
+                }
             }
             else if (Other.name == "Chave quebrada" && objectList.Contains("Super cola")){
                 objectList.Remove("Chave quebrada");
