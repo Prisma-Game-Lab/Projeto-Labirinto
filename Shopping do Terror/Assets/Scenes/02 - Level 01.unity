@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -18501,7 +18501,7 @@ MonoBehaviour:
     mais barra-pesada do pa\xEDs. Para entrar nela, nao basta amar o time, mas tamb\xE9m
     mostrar que \xE9 forte e destemido passando por uma prova intensa: invadir um
     shopping abandonado e trocar a sua atual camisa de time pela camisa deixada pela
-    \xFAltima pessoa a fazer o desafio.\r"
+    \xFAltima pessoa a fazer o desafio.\r\n\n\nAperte \"E\" para continuar"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: fddd7b51a37823c42b52fd00bf15de7e, type: 2}
   m_sharedMaterial: {fileID: 7389727599609214465, guid: fddd7b51a37823c42b52fd00bf15de7e,
