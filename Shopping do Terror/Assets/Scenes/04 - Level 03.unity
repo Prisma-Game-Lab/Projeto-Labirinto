@@ -682,9 +682,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 56013231}
   obstaculo: {fileID: 104278286}
-  gameManeger: {fileID: 0}
+  gameManeger: {fileID: 1599453627}
   itenList:
-  - {fileID: 1599453626}
+  - {fileID: 0}
   energy: 1
   indiferente: 0
 --- !u!1 &138545962
