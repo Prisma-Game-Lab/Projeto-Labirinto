@@ -296,12 +296,12 @@ PrefabInstance:
         type: 3}
       propertyPath: Object
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 172720172}
     - target: {fileID: 36661112938673499, guid: 910cf55de20e527469a0543c654ef470,
         type: 3}
       propertyPath: Particles
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 66480901}
     - target: {fileID: 36661112938673499, guid: 910cf55de20e527469a0543c654ef470,
         type: 3}
       propertyPath: triggerText
@@ -553,6 +553,12 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 66480897}
   m_PrefabAsset: {fileID: 0}
+--- !u!198 &66480901 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 8369638717661305982, guid: bb133dfe152846143aa923a4f2526282,
+    type: 3}
+  m_PrefabInstance: {fileID: 66480897}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &104278286
 GameObject:
   m_ObjectHideFlags: 0
@@ -678,7 +684,7 @@ MonoBehaviour:
   obstaculo: {fileID: 104278286}
   gameManeger: {fileID: 0}
   itenList:
-  - {fileID: 0}
+  - {fileID: 1599453626}
   energy: 1
   indiferente: 0
 --- !u!1 &138545962
@@ -870,6 +876,12 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &172720172 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1236968247037002798, guid: 00d3dbc2bf059964184f6d25f84ab51d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1923807161}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &176743216
 GameObject:
   m_ObjectHideFlags: 0
@@ -17082,7 +17094,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 1923807161}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 172720172}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
