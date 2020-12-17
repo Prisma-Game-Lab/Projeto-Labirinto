@@ -113,18 +113,23 @@ public class ObjectCollider : MonoBehaviour
                 Other.SetActive(false);
                 count++;
                 objectCountScript.CountText(count);
-                triggerText.text = "Voce pegou dois objetos!";
+                triggerText.text = "Voce achou uma carteira com moedas e um cartão de funcionário";
             }
             else if (Other.name == "Maquina de Lanches")
             {
-                if (objectList.Contains("Moeda") && energy == true)
+                if (objectList.Contains("Moeda") && energy)
                 {
                     objectList.Remove("Moeda");
                     objectList.Add("Lanche");
                     count++;
                     objectCountScript.CountText(count);
                     triggerText.text = "Você usou as moedas para pegar o lanche";
-                    //triggerText.text = "Voce ganhou um Lanche!";
+                }
+                else if (objectList.Contains("Moeda") && !energy) {
+                    triggerText.text = "A máquina não funcionará sem eletricidade";
+                }
+                else {
+                    triggerText.text = "A máquina não funcionará sem dinheiro";
                 }
             }
             else if (Other.name == "Chave quebrada" )
@@ -135,35 +140,37 @@ public class ObjectCollider : MonoBehaviour
                     objectList.Add("Chave inteira");
                     count++;
                     objectCountScript.CountText(count);
-                    triggerText.text = "Voce o objeto!";
+                    triggerText.text = "Você usou a super cola para colar a chave";
+                }
+                else {
+                    triggerText.text = "A chave está quebrada";
                 }
                 
             }
             else if (Other.name == "PAINEL DE ENERGIA")
             {
-                if (energy == true)
+                if (energy)
                 {
                     energy = false;
                     gameManeger.eletricidade = energy;
                     triggerText.text = "Você ligou a energia";
-                    Debug.Log("Energia desligada");
+                    //Debug.Log("Energia desligada");
                 }
                 else
                 {
                     energy = true;
                     gameManeger.eletricidade = energy;
                     triggerText.text = "Você desligou a energia";
-                    Debug.Log("Energia ligada");
+                    //Debug.Log("Energia ligada");
                 }
             }
-            else
+            else // camisa, taco de beisebol, super cola, pé de cabra
             {
                 objectList.Add(Other.name);
                 Other.SetActive(false);
+                triggerText.text = "Você pegou {nome do objeto}";
                 count++;
                 objectCountScript.CountText(count);
-                //triggerText.text = "Voce pegou o objeto!";
-                //triggerText.text = textObject;
             }
             isTrigger = false;
             triggerText.gameObject.SetActive(true);
