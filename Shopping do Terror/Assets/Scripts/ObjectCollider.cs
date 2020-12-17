@@ -25,8 +25,8 @@ public class ObjectCollider : MonoBehaviour
     private GameObject Other;
 
     private bool isTrigger = false;
-    public bool energy = true;
 
+    public bool energy = true;
 
 
     void Start()
@@ -123,7 +123,8 @@ public class ObjectCollider : MonoBehaviour
                     objectList.Add("Lanche");
                     count++;
                     objectCountScript.CountText(count);
-                    triggerText.text = "Voce ganhou um Lanche!";
+                    triggerText.text = "Você usou as moedas para pegar o lanche";
+                    //triggerText.text = "Voce ganhou um Lanche!";
                 }
             }
             else if (Other.name == "Chave quebrada" )
@@ -144,12 +145,14 @@ public class ObjectCollider : MonoBehaviour
                 {
                     energy = false;
                     gameManeger.eletricidade = energy;
+                    triggerText.text = "Você ligou a energia";
                     Debug.Log("Energia desligada");
                 }
                 else
                 {
                     energy = true;
                     gameManeger.eletricidade = energy;
+                    triggerText.text = "Você desligou a energia";
                     Debug.Log("Energia ligada");
                 }
             }
@@ -159,10 +162,12 @@ public class ObjectCollider : MonoBehaviour
                 Other.SetActive(false);
                 count++;
                 objectCountScript.CountText(count);
-                triggerText.text = "Voce pegou o objeto!";
+                //triggerText.text = "Voce pegou o objeto!";
+                //triggerText.text = textObject;
             }
             isTrigger = false;
             triggerText.gameObject.SetActive(true);
+            Debug.Log(triggerText.text);
             StartCoroutine(DisableText());
             somObjeto.Play();
         }
