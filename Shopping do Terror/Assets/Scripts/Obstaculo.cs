@@ -11,22 +11,26 @@ public class Obstaculo : MonoBehaviour
     [Header("Conecte o gameManeger aqui")]
     public GameManeger gameManeger;
     [Header("Lista de intens necessários para se passar pelo obstáculo.")]
-    public List<GameObject> itenList = new List<GameObject>();
+    public List<GameObject> itenList;
     [Header("Precisa da energia para passar pelo obstáculo?")]
     public bool energy;
     [Header("É indiferente a energia?")]
     public bool indiferente;
-    bool cont = false;
+    private bool cont = false;
+    private ObjectCollider playerCollider;
 
     private void Start()
     {
+        playerCollider = player.GetComponent<ObjectCollider>();
+        
         for (int i = 0; i < itenList.Count; i++)
         {
-            if (player.GetComponent<ObjectCollider>().objectList.Contains(itenList[i].name))
+            if (playerCollider.objectList.Contains(itenList[i].name) && itenList[i].name != "Cartao de funcionario")
             {
                 this.gameObject.SetActive(false);
             }
         }
+        
     }
 
     void OnCollisionEnter2D(Collision2D other)
@@ -34,7 +38,7 @@ public class Obstaculo : MonoBehaviour
         //caso o player tenha os itens (que estão no script ObjectCollider) ele desliga o objeto e permite o player passar
         for(int i = 0; i < itenList.Count; i++)
         {
-            if (player.GetComponent<ObjectCollider>().objectList.Contains(itenList[i].name))
+            if (playerCollider.objectList.Contains(itenList[i].name))
             {
                 cont = true;
             }
@@ -47,13 +51,14 @@ public class Obstaculo : MonoBehaviour
             
         }
 
-        if (other.gameObject.CompareTag("Player") && cont == true && indiferente == true){
+        if (other.gameObject.CompareTag("Player") && cont && indiferente){
+            Debug.Log("Indiferente a energia");
             obstaculo.SetActive(false);
         }
-        else if(other.gameObject.CompareTag("Player") && cont == true && energy == true && gameManeger.eletricidade == true){
+        else if(other.gameObject.CompareTag("Player") && cont && energy && gameManeger.eletricidade){
             obstaculo.SetActive(false);
         }
-        else if(other.gameObject.CompareTag("Player") && cont == true && energy == true && gameManeger.eletricidade == false){
+        else if(other.gameObject.CompareTag("Player") && cont && energy && !gameManeger.eletricidade){
             obstaculo.SetActive(false);
         }
     }
