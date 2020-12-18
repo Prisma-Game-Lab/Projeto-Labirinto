@@ -11,7 +11,7 @@ public class Obstaculo : MonoBehaviour
     [Header("Conecte o gameManeger aqui")]
     public GameManeger gameManeger;
     [Header("Lista de intens necessários para se passar pelo obstáculo.")]
-    public List<GameObject> itenList = new List<GameObject>();
+    public List<GameObject> itenList;
     [Header("Precisa da energia para passar pelo obstáculo?")]
     public bool energy;
     [Header("É indiferente a energia?")]
@@ -22,13 +22,15 @@ public class Obstaculo : MonoBehaviour
     private void Start()
     {
         playerCollider = player.GetComponent<ObjectCollider>();
+        
         for (int i = 0; i < itenList.Count; i++)
         {
-            if (playerCollider.objectList.Contains(itenList[i].name))
+            if (playerCollider.objectList.Contains(itenList[i].name) && itenList[i].name != "Cartao de funcionario")
             {
                 this.gameObject.SetActive(false);
             }
         }
+        
     }
 
     void OnCollisionEnter2D(Collision2D other)

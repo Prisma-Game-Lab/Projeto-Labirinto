@@ -28,6 +28,7 @@ public class ObjectCollider : MonoBehaviour
 
     public bool energy = true;
 
+    public GameObject cartaoDeFuncionario;
 
     void Start()
     {
@@ -111,9 +112,10 @@ public class ObjectCollider : MonoBehaviour
             if (Other.name == "Carteira")
             {
                 Debug.Log("pegou a carteira.");
-                objectList.Add("Cartão de funcionário");
+                //objectList.Add("Cartão de funcionário");
                 objectList.Add("Moeda");
                 Other.SetActive(false);
+                cartaoDeFuncionario.SetActive(true);
                 count++;
                 objectCountScript.CountText(count);
                 triggerText.text = "Voce achou uma carteira com moedas e um cartão de funcionário";
@@ -190,11 +192,11 @@ public class ObjectCollider : MonoBehaviour
                 }
             }
             */
-            else // camisa, taco de beisebol, super cola, pé de cabra
+            else // camisa, taco de beisebol, super cola, pé de cabra, cartao funcionario
             {
                 objectList.Add(Other.name);
                 Other.SetActive(false);
-                if (Other.name == "camisa" || Other.name == "super cola")    
+                if (Other.name == "camisa" || Other.name == "super cola" || Other.name == "camisa final")    
                     triggerText.text = "Você pegou a " + Other.name;
                 else
                     triggerText.text = "Você pegou o " + Other.name;
