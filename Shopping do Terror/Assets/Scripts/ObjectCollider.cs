@@ -76,13 +76,16 @@ public class ObjectCollider : MonoBehaviour
 
         if (Other.name == "Fios")
         {
-            if (energy == true)
+            if (energy)
             {
                 Debug.Log("enconstou");
                 Other.GetComponent<BoxCollider2D>().enabled = true;
-                triggerText.text = "Você tomou um choque!";
+                triggerText.text = "Os fios elétricos podem dar choque, desligue a eletrcidade para passar";
+                triggerText.gameObject.SetActive(true);
+                StartCoroutine(DisableText(triggerText.gameObject));
+
             }
-            if (energy == false)
+            if (!energy)
             {
                 Debug.Log("enconstou");
                 Other.GetComponent<BoxCollider2D>().enabled = false;
@@ -128,8 +131,12 @@ public class ObjectCollider : MonoBehaviour
                 else if (objectList.Contains("Moeda") && !energy) {
                     triggerText.text = "A máquina não funcionará sem eletricidade";
                 }
-                else {
+                else if (!objectList.Contains("Moeda") && energy) {
                     triggerText.text = "A máquina não funcionará sem dinheiro";
+                }
+
+                else {
+                    triggerText.text = "Você não tem os itens adequados";
                 }
             }
             else if (Other.name == "Chave quebrada" )
@@ -164,25 +171,47 @@ public class ObjectCollider : MonoBehaviour
                     //Debug.Log("Energia ligada");
                 }
             }
+            /*
+            else if (Other.name == "porta eletrica") {
+                if (objectList.Contains("Cartão de funcionário") && energy) {
+                    Other.SetActive(false);
+                    triggerText.text = "Você usou o cartão de funcionário para abrir a porta";
+                }
+                else if  (objectList.Contains("Cartão de funcionário") && !energy) {
+                    triggerText.text = "A trava elétrica não funciona sem eletricidade";
+                }
+
+                else if  (!objectList.Contains("Cartão de funcionário") && energy) {
+                    triggerText.text = "A trava elétrica não funciona sem eletricidade";
+                }
+
+                else {
+                    triggerText.text = "Você não tem os itens adequados";
+                }
+            }
+            */
             else // camisa, taco de beisebol, super cola, pé de cabra
             {
                 objectList.Add(Other.name);
                 Other.SetActive(false);
-                triggerText.text = "Você pegou {nome do objeto}";
+                if (Other.name == "camisa" || Other.name == "super cola")    
+                    triggerText.text = "Você pegou a " + Other.name;
+                else
+                    triggerText.text = "Você pegou o " + Other.name;
                 count++;
                 objectCountScript.CountText(count);
             }
             isTrigger = false;
             triggerText.gameObject.SetActive(true);
             Debug.Log(triggerText.text);
-            StartCoroutine(DisableText());
+            StartCoroutine(DisableText(triggerText.gameObject));
             somObjeto.Play();
         }
     }
 
-    private IEnumerator DisableText()
+    private IEnumerator DisableText(GameObject texto)
     {
         yield return new WaitForSeconds(1.5f);
-        triggerText.gameObject.SetActive(false);
+        texto.SetActive(false);
     }
 }
