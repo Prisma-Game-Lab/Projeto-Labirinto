@@ -7,8 +7,8 @@ public class MainMenu : MonoBehaviour
 {
     public void LoadMainScene()
     {
-        SceneManager.LoadScene("02 - Level 01");
         PlayerPrefs.DeleteAll();
+        SceneManager.LoadScene("02 - Level 01");
     }
 
     public void LoadCreditsScene()
@@ -23,9 +23,9 @@ public class MainMenu : MonoBehaviour
 
     public void LoadControlsScene()
     {
-        //SceneManager.LoadScene("");
+        SceneManager.LoadScene("05 - Controles");
     }
-    
+
     public void ExitGame()
     {
         Application.Quit();

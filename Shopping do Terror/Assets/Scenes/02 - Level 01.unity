@@ -17208,6 +17208,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1236968246643747529, guid: 00d3dbc2bf059964184f6d25f84ab51d,
+        type: 3}
+      propertyPath: m_Name
+      value: TriggerText
+      objectReference: {fileID: 0}
     - target: {fileID: 1236968247037002798, guid: 00d3dbc2bf059964184f6d25f84ab51d,
         type: 3}
       propertyPath: m_IsActive
@@ -22025,7 +22030,7 @@ MonoBehaviour:
   gameManeger: {fileID: 434498125}
   itenList:
   - {fileID: 529854865}
-  energy: 0
+  energy: 1
   indiferente: 1
   triggerText2: {fileID: 788903883}
 --- !u!61 &1782081300

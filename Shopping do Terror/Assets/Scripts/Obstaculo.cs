@@ -79,20 +79,24 @@ public class Obstaculo : MonoBehaviour
         }
 
         if (other.gameObject.CompareTag("Player") && cont && indiferente){
-            Debug.Log("Indiferente a energia");
-            obstaculo.SetActive(false);
+            GetComponent<SpriteRenderer>().enabled = false;
+            GetComponent<BoxCollider2D>().enabled = false;
         }
         else if(other.gameObject.CompareTag("Player") && cont && energy && gameManeger.eletricidade){
-            obstaculo.SetActive(false);
+            GetComponent<SpriteRenderer>().enabled = false;
+            GetComponent<BoxCollider2D>().enabled = false;
         }
         else if(other.gameObject.CompareTag("Player") && cont && energy && !gameManeger.eletricidade){
-            obstaculo.SetActive(false);
+            GetComponent<SpriteRenderer>().enabled = false;
+            GetComponent<BoxCollider2D>().enabled = false;
         }
     }
 
     private IEnumerator DisableText(GameObject texto)
     {
+        Debug.Log("entrei na corrotina");
         yield return new WaitForSeconds(1.5f);
+        Debug.Log("passei do tempo");
         texto.SetActive(false);
     }
 }

@@ -16,7 +16,7 @@ public class GameManeger : MonoBehaviour
     public Text UITempo;
 
     /* Variaveis para a energia */
-    public bool eletricidade = true;
+    public bool eletricidade = false;
 
     /* Variaveis para terimnar o jogo*/
     public GameObject GameOverUI;
@@ -24,16 +24,25 @@ public class GameManeger : MonoBehaviour
 
     void Awake()
     {
+        //Debug.Log("Valor eletricidade " + PlayerPrefs.HasKey("Eletricidade"));
+        PlayerPrefs.DeleteKey("Eletricidade");
         GameOverUI.SetActive(false);
-        int elet = PlayerPrefs.GetInt("Eletricidade");
-        if (elet == 0)
-        {
-            eletricidade = true;
+    }
+
+    void Start() {
+        Debug.Log("Valor eletricidade " + PlayerPrefs.HasKey("Eletricidade"));
+        if (PlayerPrefs.HasKey("Eletricidade")) {
+            int elet = PlayerPrefs.GetInt("Eletricidade",1);
+            if (elet == 0)
+            {
+                eletricidade = true;
+            }
+            else if(elet == 1)
+            {
+                eletricidade = false;
+            }
         }
-        else if(elet == 1)
-        {
-            eletricidade = false;
-        }
+
     }
 
     void Update()
@@ -72,6 +81,7 @@ public class GameManeger : MonoBehaviour
 
     void OnDestroy()
     {
+        
         if(eletricidade == true)
         {
             PlayerPrefs.SetInt("Eletricidade", 0);
@@ -79,6 +89,9 @@ public class GameManeger : MonoBehaviour
         else
         {
             PlayerPrefs.SetInt("Eletricidade", 1);
+            Debug.Log("vini amor da minha vida");
         } 
+        Debug.Log("fui destruido");
+
     }
 }

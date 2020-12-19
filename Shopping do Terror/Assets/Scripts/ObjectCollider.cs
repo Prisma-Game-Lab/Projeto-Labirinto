@@ -32,9 +32,10 @@ public class ObjectCollider : MonoBehaviour
 
     void Start()
     {
-        //Particles.Stop();
+        
         objectCountScript = Object.GetComponent<ObjectCount>();
         energy = gameManeger.eletricidade;
+        Debug.Log(energy);
     }
 
     void Awake()
@@ -79,16 +80,16 @@ public class ObjectCollider : MonoBehaviour
         {
             if (energy)
             {
-                Debug.Log("enconstou");
+                
                 Other.GetComponent<BoxCollider2D>().enabled = true;
-                triggerText.text = "Os fios elétricos podem dar choque, desligue a eletrcidade para passar";
+                triggerText.text = "Os fios elétricos podem dar choque, desligue a eletricidade para passar";
                 triggerText.gameObject.SetActive(true);
                 StartCoroutine(DisableText(triggerText.gameObject));
 
             }
             if (!energy)
             {
-                Debug.Log("enconstou");
+                Other.transform.GetChild(0).gameObject.SetActive(false);
                 Other.GetComponent<BoxCollider2D>().enabled = false;
             }
         }

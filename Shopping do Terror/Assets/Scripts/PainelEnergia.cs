@@ -7,7 +7,7 @@ public class PainelEnergia : MonoBehaviour
 {
     public GameManeger gameManeger;
     public bool isTrigger = true;
-
+    /*
     void OnTriggerEnter2D(Collider2D other){
         if (other.gameObject.CompareTag("Player")){
             if(isTrigger == true && Input.GetKeyDown("z")){
@@ -23,4 +23,5 @@ public class PainelEnergia : MonoBehaviour
             }
         }
     }
+    */
 }
