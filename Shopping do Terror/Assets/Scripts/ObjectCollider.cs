@@ -30,6 +30,10 @@ public class ObjectCollider : MonoBehaviour
 
     public GameObject cartaoDeFuncionario;
 
+    public GameObject painelDesligado;
+
+    public GameObject painelLigado;
+
     void Start()
     {
         
@@ -112,7 +116,6 @@ public class ObjectCollider : MonoBehaviour
             //Particles.Stop();
             if (Other.name == "Carteira")
             {
-                Debug.Log("pegou a carteira.");
                 //objectList.Add("Cartão de funcionário");
                 objectList.Add("Moeda");
                 Other.SetActive(false);
@@ -157,21 +160,24 @@ public class ObjectCollider : MonoBehaviour
                 }
                 
             }
-            else if (Other.name == "PAINEL DE ENERGIA")
+            else if (Other.name == "PAINEL DE ENERGIA" || Other.name == "PAINEL DE ENERGIA DESLIGADA")
             {
+                Debug.Log(Other.name);
                 if (energy)
                 {
                     energy = false;
                     gameManeger.eletricidade = energy;
+                    painelLigado.GetComponent<SpriteRenderer>().enabled = false;
+                    painelDesligado.GetComponent<SpriteRenderer>().enabled = true;
                     triggerText.text = "Você desligou a energia";
-                    //Debug.Log("Energia desligada");
                 }
                 else
                 {
                     energy = true;
                     gameManeger.eletricidade = energy;
+                    painelDesligado.GetComponent<SpriteRenderer>().enabled = false;
+                    painelLigado.GetComponent<SpriteRenderer>().enabled = true;
                     triggerText.text = "Você ligou a energia";
-                    //Debug.Log("Energia ligada");
                 }
             }
             /*
@@ -206,9 +212,8 @@ public class ObjectCollider : MonoBehaviour
                 count++;
                 objectCountScript.CountText(count);
             }
-            isTrigger = false;
             triggerText.gameObject.SetActive(true);
-            Debug.Log(triggerText.text);
+            isTrigger = false;
             StartCoroutine(DisableText(triggerText.gameObject));
             somObjeto.Play();
         }
