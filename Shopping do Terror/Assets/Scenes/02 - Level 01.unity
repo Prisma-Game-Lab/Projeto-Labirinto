@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -346,12 +346,17 @@ PrefabInstance:
         type: 3}
       propertyPath: Particles
       value: 
-      objectReference: {fileID: 304175089}
+      objectReference: {fileID: 0}
     - target: {fileID: 36661112938673499, guid: 910cf55de20e527469a0543c654ef470,
         type: 3}
       propertyPath: triggerText
       value: 
       objectReference: {fileID: 788903883}
+    - target: {fileID: 36661112938673499, guid: 910cf55de20e527469a0543c654ef470,
+        type: 3}
+      propertyPath: energy
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1851432111660627276, guid: 910cf55de20e527469a0543c654ef470,
         type: 3}
       propertyPath: m_Offset.y
@@ -939,6 +944,7 @@ MonoBehaviour:
   - {fileID: 201002629}
   energy: 0
   indiferente: 1
+  triggerText2: {fileID: 788903883}
 --- !u!61 &179163239
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1093,7 +1099,9 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8369638717661305983, guid: bb133dfe152846143aa923a4f2526282, type: 3}
+    - {fileID: 8369638717661305982, guid: bb133dfe152846143aa923a4f2526282, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: bb133dfe152846143aa923a4f2526282, type: 3}
 --- !u!1 &201002629 stripped
 GameObject:
@@ -1485,12 +1493,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!198 &304175089 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 8369638717661305982, guid: bb133dfe152846143aa923a4f2526282,
-    type: 3}
-  m_PrefabInstance: {fileID: 201002628}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &322275116
 GameObject:
   m_ObjectHideFlags: 0
@@ -15550,7 +15552,9 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8369638717661305983, guid: bb133dfe152846143aa923a4f2526282, type: 3}
+    - {fileID: 8369638717661305982, guid: bb133dfe152846143aa923a4f2526282, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: bb133dfe152846143aa923a4f2526282, type: 3}
 --- !u!1 &529854865 stripped
 GameObject:
@@ -22023,6 +22027,7 @@ MonoBehaviour:
   - {fileID: 529854865}
   energy: 0
   indiferente: 1
+  triggerText2: {fileID: 788903883}
 --- !u!61 &1782081300
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -10,7 +10,7 @@ public class ObjectCollider : MonoBehaviour
     [Tooltip("Referencia texto que conta objetos")]
     public GameObject Object;
 
-    public ParticleSystem Particles;
+    //public ParticleSystem Particles;
 
     public AudioSource somObjeto;
 
@@ -26,13 +26,13 @@ public class ObjectCollider : MonoBehaviour
 
     private bool isTrigger = false;
 
-    public bool energy = true;
+    public bool energy = false;
 
     public GameObject cartaoDeFuncionario;
 
     void Start()
     {
-        Particles.Stop();
+        //Particles.Stop();
         objectCountScript = Object.GetComponent<ObjectCount>();
         energy = gameManeger.eletricidade;
     }
@@ -70,7 +70,7 @@ public class ObjectCollider : MonoBehaviour
         if (Other.CompareTag("Object"))
         {
             isTrigger = true;
-            Particles.Play();
+            //Particles.Play();
             triggerText.gameObject.SetActive(true);
             triggerText.text = "Aperte E para interagir";
         }
@@ -98,7 +98,7 @@ public class ObjectCollider : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Object"))
         {
-            Particles.Stop();
+            //Particles.Stop();
             triggerText.gameObject.SetActive(false);
             isTrigger = false;
         }
@@ -108,7 +108,7 @@ public class ObjectCollider : MonoBehaviour
     {
         if (Input.GetKeyDown("e"))
         {
-            Particles.Stop();
+            //Particles.Stop();
             if (Other.name == "Carteira")
             {
                 Debug.Log("pegou a carteira.");
@@ -146,7 +146,7 @@ public class ObjectCollider : MonoBehaviour
                 if(objectList.Contains("Super cola"))
                 {
                     objectList.Remove("Chave quebrada");
-                    objectList.Add("Chave inteira");
+                    objectList.Add("Chave consertada");
                     count++;
                     objectCountScript.CountText(count);
                     triggerText.text = "Você usou a super cola para colar a chave";
@@ -162,14 +162,14 @@ public class ObjectCollider : MonoBehaviour
                 {
                     energy = false;
                     gameManeger.eletricidade = energy;
-                    triggerText.text = "Você ligou a energia";
+                    triggerText.text = "Você desligou a energia";
                     //Debug.Log("Energia desligada");
                 }
                 else
                 {
                     energy = true;
                     gameManeger.eletricidade = energy;
-                    triggerText.text = "Você desligou a energia";
+                    triggerText.text = "Você ligou a energia";
                     //Debug.Log("Energia ligada");
                 }
             }
@@ -196,8 +196,10 @@ public class ObjectCollider : MonoBehaviour
             {
                 objectList.Add(Other.name);
                 Other.SetActive(false);
-                if (Other.name == "camisa" || Other.name == "super cola" || Other.name == "camisa final")    
+                if (Other.name == "camisa" || Other.name == "super cola")    
                     triggerText.text = "Você pegou a " + Other.name;
+                else if (Other.name == "camisa final")
+                    triggerText.text = "Parabéns! Você vestiu a camisa do time! Agora é só sair do shopping, mas cuidado com o tempo";
                 else
                     triggerText.text = "Você pegou o " + Other.name;
                 count++;

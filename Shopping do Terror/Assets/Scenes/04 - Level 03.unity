@@ -598,7 +598,7 @@ PrefabInstance:
         type: 3}
       propertyPath: Particles
       value: 
-      objectReference: {fileID: 66480901}
+      objectReference: {fileID: 0}
     - target: {fileID: 36661112938673499, guid: 910cf55de20e527469a0543c654ef470,
         type: 3}
       propertyPath: triggerText
@@ -944,7 +944,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Taco de baseball
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8369638717661305983, guid: bb133dfe152846143aa923a4f2526282, type: 3}
+    - {fileID: 8369638717661305982, guid: bb133dfe152846143aa923a4f2526282, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: bb133dfe152846143aa923a4f2526282, type: 3}
 --- !u!4 &66480898 stripped
 Transform:
@@ -955,12 +957,6 @@ Transform:
 --- !u!1 &66480899 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8369638717661305956, guid: bb133dfe152846143aa923a4f2526282,
-    type: 3}
-  m_PrefabInstance: {fileID: 66480897}
-  m_PrefabAsset: {fileID: 0}
---- !u!198 &66480901 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 8369638717661305982, guid: bb133dfe152846143aa923a4f2526282,
     type: 3}
   m_PrefabInstance: {fileID: 66480897}
   m_PrefabAsset: {fileID: 0}
@@ -1254,6 +1250,7 @@ MonoBehaviour:
   - {fileID: 1598724376}
   energy: 1
   indiferente: 0
+  triggerText2: {fileID: 0}
 --- !u!1 &138545962
 GameObject:
   m_ObjectHideFlags: 0
@@ -13732,6 +13729,7 @@ MonoBehaviour:
   - {fileID: 66480899}
   energy: 0
   indiferente: 1
+  triggerText2: {fileID: 0}
 --- !u!1 &987956687
 GameObject:
   m_ObjectHideFlags: 0
@@ -20421,6 +20419,11 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1756844397, guid: 00d3dbc2bf059964184f6d25f84ab51d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1236968247037002798, guid: 00d3dbc2bf059964184f6d25f84ab51d,
+        type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
@@ -89525,7 +89528,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Camisa Final
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8369638717661305983, guid: bb133dfe152846143aa923a4f2526282, type: 3}
+    - {fileID: 8369638717661305982, guid: bb133dfe152846143aa923a4f2526282, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: bb133dfe152846143aa923a4f2526282, type: 3}
 --- !u!1 &2083664961
 GameObject:
