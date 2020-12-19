@@ -25,11 +25,12 @@ public class GameManeger : MonoBehaviour
     void Awake()
     {
         //Debug.Log("Valor eletricidade " + PlayerPrefs.HasKey("Eletricidade"));
-        PlayerPrefs.DeleteKey("Eletricidade");
+        //PlayerPrefs.DeleteKey("Eletricidade");
         GameOverUI.SetActive(false);
     }
 
     void Start() {
+        /*
         Debug.Log("Valor eletricidade " + PlayerPrefs.HasKey("Eletricidade"));
         if (PlayerPrefs.HasKey("Eletricidade")) {
             int elet = PlayerPrefs.GetInt("Eletricidade",1);
@@ -42,7 +43,7 @@ public class GameManeger : MonoBehaviour
                 eletricidade = false;
             }
         }
-
+    */
     }
 
     void Update()
@@ -79,6 +80,7 @@ public class GameManeger : MonoBehaviour
 
     }
 
+    /*
     void OnDestroy()
     {
         
@@ -94,4 +96,5 @@ public class GameManeger : MonoBehaviour
         Debug.Log("fui destruido");
 
     }
+    */
 }

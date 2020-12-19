@@ -61,7 +61,6 @@ public class Obstaculo : MonoBehaviour
                 cont = true;
                 triggerText2.text = frasesObj[obstaculo.name][1];
                 triggerText2.gameObject.SetActive(true);
-                //Debug.Log(frasesObj[obstaculo.name][1]);
                 StartCoroutine(DisableText(triggerText2.gameObject));
                 
             }
@@ -70,10 +69,7 @@ public class Obstaculo : MonoBehaviour
                 cont = false;
                 triggerText2.text = frasesObj[obstaculo.name][0];
                 triggerText2.gameObject.SetActive(true);
-                //Debug.Log("não tem os itens necessários");
-                //Debug.Log(frasesObj[obstaculo.name][0]);
                 StartCoroutine(DisableText(triggerText2.gameObject));
-                //break;
             }
             
         }
@@ -94,9 +90,7 @@ public class Obstaculo : MonoBehaviour
 
     private IEnumerator DisableText(GameObject texto)
     {
-        Debug.Log("entrei na corrotina");
         yield return new WaitForSeconds(1.5f);
-        Debug.Log("passei do tempo");
         texto.SetActive(false);
     }
 }

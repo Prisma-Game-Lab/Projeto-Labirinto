@@ -10,8 +10,6 @@ public class ObjectCollider : MonoBehaviour
     [Tooltip("Referencia texto que conta objetos")]
     public GameObject Object;
 
-    //public ParticleSystem Particles;
-
     public AudioSource somObjeto;
 
     public TextMeshProUGUI triggerText;
@@ -26,7 +24,7 @@ public class ObjectCollider : MonoBehaviour
 
     private bool isTrigger = false;
 
-    public bool energy = false;
+    static public bool energy = false;
 
     public GameObject cartaoDeFuncionario;
 
@@ -38,8 +36,13 @@ public class ObjectCollider : MonoBehaviour
     {
         
         objectCountScript = Object.GetComponent<ObjectCount>();
-        energy = gameManeger.eletricidade;
-        Debug.Log(energy);
+        if (energy) {
+            painelLigado.GetComponent<SpriteRenderer>().enabled = true;
+        }
+        else {
+            painelDesligado.GetComponent<SpriteRenderer>().enabled = true;
+        }
+        //energy = gameManeger.eletricidade;
     }
 
     void Awake()
@@ -75,7 +78,6 @@ public class ObjectCollider : MonoBehaviour
         if (Other.CompareTag("Object"))
         {
             isTrigger = true;
-            //Particles.Play();
             triggerText.gameObject.SetActive(true);
             triggerText.text = "Aperte E para interagir";
         }
@@ -162,11 +164,10 @@ public class ObjectCollider : MonoBehaviour
             }
             else if (Other.name == "PAINEL DE ENERGIA" || Other.name == "PAINEL DE ENERGIA DESLIGADA")
             {
-                Debug.Log(Other.name);
                 if (energy)
                 {
                     energy = false;
-                    gameManeger.eletricidade = energy;
+                    //gameManeger.eletricidade = energy;
                     painelLigado.GetComponent<SpriteRenderer>().enabled = false;
                     painelDesligado.GetComponent<SpriteRenderer>().enabled = true;
                     triggerText.text = "Você desligou a energia";
@@ -174,7 +175,7 @@ public class ObjectCollider : MonoBehaviour
                 else
                 {
                     energy = true;
-                    gameManeger.eletricidade = energy;
+                    //gameManeger.eletricidade = energy;
                     painelDesligado.GetComponent<SpriteRenderer>().enabled = false;
                     painelLigado.GetComponent<SpriteRenderer>().enabled = true;
                     triggerText.text = "Você ligou a energia";
