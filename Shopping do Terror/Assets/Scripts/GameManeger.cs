@@ -80,6 +80,12 @@ public class GameManeger : MonoBehaviour
 
     }
 
+    public void Continue() {
+        GameOverUI.SetActive(false);
+        Time.timeScale = 1f;
+        Pause.cantPause = false;
+    }
+
     /*
     void OnDestroy()
     {

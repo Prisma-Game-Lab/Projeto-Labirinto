@@ -34,6 +34,8 @@ public class ObjectCollider : MonoBehaviour
 
     public GameObject painelLigado;
 
+    public GameObject Lanche;
+
     void Start()
     {
         
@@ -137,7 +139,8 @@ public class ObjectCollider : MonoBehaviour
                 if (objectList.Contains("Moeda") && energy)
                 {
                     objectList.Remove("Moeda");
-                    objectList.Add("Lanche");
+                    //objectList.Add("Lanche");
+                    Lanche.SetActive(true);
                     count++;
                     objectCountScript.CountText(count);
                     triggerText.text = "Você usou as moedas para pegar o lanche";
