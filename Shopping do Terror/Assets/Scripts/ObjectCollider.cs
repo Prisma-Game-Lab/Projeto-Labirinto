@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class ObjectCollider : MonoBehaviour
 {
@@ -181,7 +182,7 @@ public class ObjectCollider : MonoBehaviour
                 if (energy)
                 {
                     energy = false;
-                    //gameManeger.eletricidade = energy;
+                    gameManeger.eletricidade = energy;
                     painelLigado.GetComponent<SpriteRenderer>().enabled = false;
                     painelDesligado.GetComponent<SpriteRenderer>().enabled = true;
                     triggerText.text = "Você desligou a energia";
@@ -189,39 +190,31 @@ public class ObjectCollider : MonoBehaviour
                 else
                 {
                     energy = true;
-                    //gameManeger.eletricidade = energy;
+                    gameManeger.eletricidade = energy;
                     painelDesligado.GetComponent<SpriteRenderer>().enabled = false;
                     painelLigado.GetComponent<SpriteRenderer>().enabled = true;
                     triggerText.text = "Você ligou a energia";
                 }
             }
-            /*
-            else if (Other.name == "porta eletrica") {
-                if (objectList.Contains("Cartão de funcionário") && energy) {
-                    Other.SetActive(false);
-                    triggerText.text = "Você usou o cartão de funcionário para abrir a porta";
+            else if(Other.name == "Saida") {
+                if(objectList.Contains("Camisa Final")) {
+                    triggerText.text = "Parabéns!";
+                    StartCoroutine(GoCredits());
                 }
-                else if  (objectList.Contains("Cartão de funcionário") && !energy) {
-                    triggerText.text = "A trava elétrica não funciona sem eletricidade";
-                }
-
-                else if  (!objectList.Contains("Cartão de funcionário") && energy) {
-                    triggerText.text = "A trava elétrica não funciona sem eletricidade";
-                }
-
                 else {
-                    triggerText.text = "Você não tem os itens adequados";
+                    triggerText.text = "Você ainda não possui a Camisa do time";
                 }
             }
-            */
             else // camisa, taco de beisebol, super cola, pé de cabra, cartao funcionario
             {
                 objectList.Add(Other.name);
                 Other.SetActive(false);
                 if (Other.name == "camisa" || Other.name == "Super cola" || Other.name == "Moeda" || Other.name == "Chave consertada")    
                     triggerText.text = "Você pegou a " + Other.name;
-                else if (Other.name == "camisa final")
-                    triggerText.text = "Parabéns! Você vestiu a camisa do time! Agora é só sair do shopping, mas cuidado com o tempo";
+                else if (Other.name == "Camisa Final") {
+                    triggerText.text = "Parabéns! Você vestiu a Camisa do time! Agora é só sair do shopping, mas cuidado com o tempo";
+                    GameManeger.seg = 600;
+                }
                 else
                     triggerText.text = "Você pegou o " + Other.name;
                 count++;
@@ -232,6 +225,11 @@ public class ObjectCollider : MonoBehaviour
             StartCoroutine(DisableText(triggerText.gameObject));
             somObjeto.Play();
         }
+    }
+
+    private IEnumerator GoCredits() {
+        yield return new WaitForSeconds(3.0f);
+        SceneManager.LoadScene("01 - Credits");
     }
 
     private IEnumerator DisableText(GameObject texto)

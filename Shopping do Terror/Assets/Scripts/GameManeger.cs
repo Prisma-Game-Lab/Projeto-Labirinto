@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameManeger : MonoBehaviour
 {
@@ -74,13 +75,19 @@ public class GameManeger : MonoBehaviour
         Pause.cantPause = true;
         batteryImage.material.color = Color.white;
         batteryImage2.material.color = Color.white;
-
     }
 
     public void Continue() {
         GameOverUI.SetActive(false);
         Time.timeScale = 1f;
         Pause.cantPause = false;
+        if(SpawnPoint.Checked) {
+            SceneManager.LoadScene("04 - Level 03");
+        }
+        else {
+            SceneManager.LoadScene("02 - Level 01");
+            PlayerPrefs.DeleteAll();
+        }
     }
 
     /*

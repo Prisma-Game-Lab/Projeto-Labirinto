@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SpawnPoint : MonoBehaviour
 {
@@ -13,6 +14,8 @@ public class SpawnPoint : MonoBehaviour
     private int aux;
 
     public GameObject CheckPoint;
+
+    public static bool Checked = false;
 
     // Start is called before the first frame update
     void Start()
@@ -33,11 +36,15 @@ public class SpawnPoint : MonoBehaviour
 
         if(player.GetComponent<ObjectCollider>().objectList.Contains("Camisa Final")) {
             SetupCheckpoint(player);
+            Checked = true;
         }
     }
 
     private void SetupCheckpoint(GameObject player) {
         player.transform.position = new Vector2(CheckPoint.transform.position.x,CheckPoint.transform.position.y);
+        if(SceneManager.GetActiveScene().name == "04 - Level 03") {
+            GameManeger.seg = 600;
+        }
     }
 
 }
