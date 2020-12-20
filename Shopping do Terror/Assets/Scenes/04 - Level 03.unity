@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -13903,7 +13903,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1016736405}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4, y: 3, z: 0}
+  m_LocalPosition: {x: -62.9, y: -25.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1154080042}
@@ -18785,7 +18785,7 @@ MonoBehaviour:
   UITempo: {fileID: 1923807163}
   eletricidade: 1
   GameOverUI: {fileID: 1923807162}
-  bateryTimeMin: 5
+  bateryTimeMin: 12
   batteryImage: {fileID: 1845296985}
   batteryImage2: {fileID: 1923807167}
 --- !u!4 &1599453628
@@ -19682,7 +19682,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1672654250}
   m_Layer: 0
-  m_Name: Chepoint
+  m_Name: Checkpoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -90036,7 +90036,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2125976989
 Transform:
   m_ObjectHideFlags: 0
