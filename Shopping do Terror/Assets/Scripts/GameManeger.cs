@@ -8,19 +8,17 @@ public class GameManeger : MonoBehaviour
     /* Variaveis para o timer */
     [System.NonSerialized]
     static public float seg = 0.0f;
-    [System.NonSerialized]
-    static public float min = 0.0f;
-    [System.NonSerialized]
-    static public float hora = 0.0f;
     public GameObject CanvasUI;
     public Text UITempo;
-
     /* Variaveis para a energia */
     public bool eletricidade = false;
-
     /* Variaveis para terimnar o jogo*/
     public GameObject GameOverUI;
     public float bateryTimeMin;
+    public Image batteryImage;
+    public Image batteryImage2;
+
+    private bool CanBlink = true;
 
     void Awake()
     {
@@ -30,45 +28,42 @@ public class GameManeger : MonoBehaviour
     }
 
     void Start() {
-        /*
-        Debug.Log("Valor eletricidade " + PlayerPrefs.HasKey("Eletricidade"));
-        if (PlayerPrefs.HasKey("Eletricidade")) {
-            int elet = PlayerPrefs.GetInt("Eletricidade",1);
-            if (elet == 0)
-            {
-                eletricidade = true;
-            }
-            else if(elet == 1)
-            {
-                eletricidade = false;
-            }
-        }
-    */
+       bateryTimeMin *= 60;
+       batteryImage.material.color = Color.white;
+       batteryImage2.material.color = Color.white;
     }
 
     void Update()
     {
-        if(min == bateryTimeMin)
-        {
-            GameOver();
-        }
+        
+    }
+
+    private IEnumerator BlinkBattery() {
+        CanBlink = false;
+        batteryImage.gameObject.SetActive(false);
+        batteryImage2.gameObject.SetActive(false);
+        yield return new WaitForSeconds(0.3f);
+        CanBlink = true;
+        batteryImage.gameObject.SetActive(true);
+        batteryImage2.gameObject.SetActive(true);
     }
        
 
     void FixedUpdate()
     {
         seg += Time.deltaTime;
-        UITempo.text = Mathf.Floor(hora).ToString("00") + ":" + Mathf.Floor(min).ToString("00") + ":" + Mathf.Floor(seg).ToString("00");
 
-        if (seg > 60.0f)
-        {
-            seg = 0.0f;
-            min++;
+        if (seg/bateryTimeMin >= 0.5) {
+            batteryImage.material.color = Color.red;
+            batteryImage2.material.color = Color.red;
         }
-        if(min > 60.0f)
+        if(seg/bateryTimeMin >= 0.8 && CanBlink) {
+            StartCoroutine(BlinkBattery());
+        }
+        batteryImage.fillAmount = 1 - seg/bateryTimeMin;
+        if(seg >= bateryTimeMin)
         {
-            min = 0.0f;
-            hora++;
+            GameOver();
         }
     }
 
