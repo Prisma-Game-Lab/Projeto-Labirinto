@@ -28,6 +28,8 @@ public class ObjectCollider : MonoBehaviour
 
     public GameObject cartaoDeFuncionario;
 
+    public GameObject moeda;
+
     public GameObject painelDesligado;
 
     public GameObject painelLigado;
@@ -119,12 +121,16 @@ public class ObjectCollider : MonoBehaviour
             if (Other.name == "Carteira")
             {
                 //objectList.Add("Cartão de funcionário");
-                objectList.Add("Moeda");
-                Other.SetActive(false);
+                //objectList.Add("Moeda");
+                Other.GetComponent<SpriteRenderer>().enabled = false;
+                Other.GetComponent<BoxCollider2D>().enabled = false;
+                //Other.SetActive(false);
                 cartaoDeFuncionario.SetActive(true);
+                moeda.SetActive(true);
                 count++;
                 objectCountScript.CountText(count);
                 triggerText.text = "Voce achou uma carteira com moedas e um cartão de funcionário";
+               
             }
             else if (Other.name == "Maquina de Lanches")
             {
@@ -204,7 +210,7 @@ public class ObjectCollider : MonoBehaviour
             {
                 objectList.Add(Other.name);
                 Other.SetActive(false);
-                if (Other.name == "camisa" || Other.name == "super cola")    
+                if (Other.name == "camisa" || Other.name == "super cola" || Other.name == "Moeda")    
                     triggerText.text = "Você pegou a " + Other.name;
                 else if (Other.name == "camisa final")
                     triggerText.text = "Parabéns! Você vestiu a camisa do time! Agora é só sair do shopping, mas cuidado com o tempo";
