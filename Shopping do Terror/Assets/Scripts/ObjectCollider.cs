@@ -36,6 +36,8 @@ public class ObjectCollider : MonoBehaviour
 
     public GameObject Lanche;
 
+    public GameObject Chave;
+
     void Start()
     {
         
@@ -161,10 +163,13 @@ public class ObjectCollider : MonoBehaviour
                 if(objectList.Contains("Super cola"))
                 {
                     objectList.Remove("Chave quebrada");
-                    objectList.Add("Chave consertada");
+                    Other.GetComponent<SpriteRenderer>().enabled = false;
+                    Other.GetComponent<BoxCollider2D>().enabled = false;
+                    //objectList.Add("Chave consertada");
                     count++;
                     objectCountScript.CountText(count);
                     triggerText.text = "Você usou a super cola para colar a chave";
+                    Chave.SetActive(true);
                 }
                 else {
                     triggerText.text = "A chave está quebrada";
@@ -213,7 +218,7 @@ public class ObjectCollider : MonoBehaviour
             {
                 objectList.Add(Other.name);
                 Other.SetActive(false);
-                if (Other.name == "camisa" || Other.name == "super cola" || Other.name == "Moeda")    
+                if (Other.name == "camisa" || Other.name == "Super cola" || Other.name == "Moeda" || Other.name == "Chave consertada")    
                     triggerText.text = "Você pegou a " + Other.name;
                 else if (Other.name == "camisa final")
                     triggerText.text = "Parabéns! Você vestiu a camisa do time! Agora é só sair do shopping, mas cuidado com o tempo";

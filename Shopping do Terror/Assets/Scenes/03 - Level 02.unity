@@ -5071,26 +5071,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 465851148}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &465851151
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 465851150}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bad200b35f8f4a844bcdcc6a4f9000db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  obstaculo: {fileID: 0}
-  gameManeger: {fileID: 0}
-  itenList:
-  - {fileID: 975515968}
-  energy: 0
-  indiferente: 1
-  triggerText2: {fileID: 0}
 --- !u!1 &469710517
 GameObject:
   m_ObjectHideFlags: 0
@@ -16616,12 +16596,12 @@ PrefabInstance:
     - target: {fileID: 8369638717661305955, guid: bb133dfe152846143aa923a4f2526282,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 86.37894
+      value: -69.3
       objectReference: {fileID: 0}
     - target: {fileID: 8369638717661305955, guid: bb133dfe152846143aa923a4f2526282,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -65.01002
+      value: -67.11
       objectReference: {fileID: 0}
     - target: {fileID: 8369638717661305955, guid: bb133dfe152846143aa923a4f2526282,
         type: 3}
@@ -16672,6 +16652,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Chave consertada
+      objectReference: {fileID: 0}
+    - target: {fileID: 8369638717661305956, guid: bb133dfe152846143aa923a4f2526282,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8369638717661305983, guid: bb133dfe152846143aa923a4f2526282, type: 3}
@@ -21406,6 +21391,11 @@ PrefabInstance:
       propertyPath: Lanche
       value: 
       objectReference: {fileID: 1863600888}
+    - target: {fileID: 36661112938673499, guid: 910cf55de20e527469a0543c654ef470,
+        type: 3}
+      propertyPath: Chave
+      value: 
+      objectReference: {fileID: 890742860}
     - target: {fileID: 6783228056907265377, guid: 910cf55de20e527469a0543c654ef470,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -21533,8 +21523,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_AssetsPPU: 24
-  m_RefResolutionX: 800
-  m_RefResolutionY: 450
+  m_RefResolutionX: 1920
+  m_RefResolutionY: 1080
   m_UpscaleRT: 0
   m_PixelSnapping: 1
   m_CropFrameX: 0

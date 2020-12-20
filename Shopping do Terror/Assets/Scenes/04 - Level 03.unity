@@ -629,6 +629,16 @@ PrefabInstance:
       propertyPath: cartaoDeFuncionario
       value: 
       objectReference: {fileID: 1298741929}
+    - target: {fileID: 36661112938673499, guid: 910cf55de20e527469a0543c654ef470,
+        type: 3}
+      propertyPath: Lanche
+      value: 
+      objectReference: {fileID: 1298741929}
+    - target: {fileID: 36661112938673499, guid: 910cf55de20e527469a0543c654ef470,
+        type: 3}
+      propertyPath: Chave
+      value: 
+      objectReference: {fileID: 1298741929}
     - target: {fileID: 6783228056774990569, guid: 910cf55de20e527469a0543c654ef470,
         type: 3}
       propertyPath: m_IsActive
@@ -20274,9 +20284,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c88f5cead0c0b2a4eb05b5900433f8d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_AssetsPPU: 16
-  m_RefResolutionX: 800
-  m_RefResolutionY: 450
+  m_AssetsPPU: 24
+  m_RefResolutionX: 1920
+  m_RefResolutionY: 1080
   m_UpscaleRT: 0
   m_PixelSnapping: 1
   m_CropFrameX: 0
