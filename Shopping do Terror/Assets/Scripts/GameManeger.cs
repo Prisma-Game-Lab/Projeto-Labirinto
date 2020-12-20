@@ -72,6 +72,8 @@ public class GameManeger : MonoBehaviour
         GameOverUI.SetActive(true);
         Time.timeScale = 0f;
         Pause.cantPause = true;
+        batteryImage.material.color = Color.white;
+        batteryImage2.material.color = Color.white;
 
     }
 
