@@ -199,6 +199,7 @@ public class ObjectCollider : MonoBehaviour
             else if(Other.name == "Saida") {
                 if(objectList.Contains("Camisa Final")) {
                     triggerText.text = "Parabéns!";
+                    GameManeger.seg = 0;
                     StartCoroutine(GoCredits());
                 }
                 else {
@@ -214,6 +215,7 @@ public class ObjectCollider : MonoBehaviour
                 else if (Other.name == "Camisa Final") {
                     triggerText.text = "Parabéns! Você vestiu a Camisa do time! Agora é só sair do shopping, mas cuidado com o tempo";
                     GameManeger.seg = 600;
+                    SpawnPoint.Checked = true;
                 }
                 else
                     triggerText.text = "Você pegou o " + Other.name;

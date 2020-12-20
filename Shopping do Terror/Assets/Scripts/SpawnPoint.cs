@@ -36,12 +36,12 @@ public class SpawnPoint : MonoBehaviour
 
         if(player.GetComponent<ObjectCollider>().objectList.Contains("Camisa Final")) {
             SetupCheckpoint(player);
-            Checked = true;
         }
     }
 
     private void SetupCheckpoint(GameObject player) {
         player.transform.position = new Vector2(CheckPoint.transform.position.x,CheckPoint.transform.position.y);
+        Time.timeScale = 1f;
         if(SceneManager.GetActiveScene().name == "04 - Level 03") {
             GameManeger.seg = 600;
         }

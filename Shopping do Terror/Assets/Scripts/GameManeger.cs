@@ -58,6 +58,10 @@ public class GameManeger : MonoBehaviour
             batteryImage.material.color = Color.red;
             batteryImage2.material.color = Color.red;
         }
+        else {
+            batteryImage.material.color = Color.white;
+            batteryImage2.material.color = Color.white;
+        }
         if(seg/bateryTimeMin >= 0.8 && CanBlink) {
             StartCoroutine(BlinkBattery());
         }

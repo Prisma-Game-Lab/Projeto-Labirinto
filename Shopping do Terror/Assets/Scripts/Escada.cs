@@ -18,6 +18,7 @@ public class Escada : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player") && cont == true)
         {
+            Time.timeScale = 1f;
             SceneManager.LoadScene(SceneName, LoadSceneMode.Single);
         }
     }
