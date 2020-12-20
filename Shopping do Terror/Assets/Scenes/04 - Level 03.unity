@@ -13633,7 +13633,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1016736405}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -62.9, y: -25.5, z: 0}
+  m_LocalPosition: {x: -6.8, y: 2.7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1154080042}
@@ -20232,6 +20232,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: -----UI-----
       objectReference: {fileID: 0}
+    - target: {fileID: 2092890377730569290, guid: 00d3dbc2bf059964184f6d25f84ab51d,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1923807168}
+    - target: {fileID: 2092890377730569290, guid: 00d3dbc2bf059964184f6d25f84ab51d,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadScene
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00d3dbc2bf059964184f6d25f84ab51d, type: 3}
 --- !u!1 &1923807162 stripped
@@ -20270,6 +20280,12 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1923807161}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1923807166 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4051377212648636, guid: 00d3dbc2bf059964184f6d25f84ab51d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1923807161}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1923807167 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 539067725, guid: 00d3dbc2bf059964184f6d25f84ab51d,
@@ -20282,6 +20298,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1923807168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1923807166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bfefb3abbb81e941ab684a1c022084b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  B1: {fileID: 1923807167}
+  B2: {fileID: 1845296985}
 --- !u!1 &1985647805
 GameObject:
   m_ObjectHideFlags: 0
