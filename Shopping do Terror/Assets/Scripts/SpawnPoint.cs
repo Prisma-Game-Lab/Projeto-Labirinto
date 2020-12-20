@@ -12,11 +12,14 @@ public class SpawnPoint : MonoBehaviour
 
     private int aux;
 
+    public GameObject CheckPoint;
+
     // Start is called before the first frame update
     void Start()
     {
-        GameObject player = GameObject.FindWithTag("Player");
+        GameObject player = GameObject.FindWithTag("Player"); // isso eh muito feio, ass: Vinny
         player.transform.position = this.transform.position;
+        
 
 
         /* Verificar se o player já pegou os itens do andar */
@@ -27,6 +30,14 @@ public class SpawnPoint : MonoBehaviour
                 objList[aux].transform.position = spawnList[aux].transform.position;
             }
         }
+
+        if(player.GetComponent<ObjectCollider>().objectList.Contains("Camisa Final")) {
+            SetupCheckpoint(player);
+        }
+    }
+
+    private void SetupCheckpoint(GameObject player) {
+        player.transform.position = new Vector2(CheckPoint.transform.position.x,CheckPoint.transform.position.y);
     }
 
 }
